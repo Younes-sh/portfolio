@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import Menu from './Menu';
 
 const Nav = styled.div `
-  background: #012439;
   width: 100%;
   height: 70px;
+  background: #ec8106;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
 `
 const Navbar = () => {
   return (
