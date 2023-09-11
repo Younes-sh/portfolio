@@ -2,15 +2,11 @@ import {Link , NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 
 const UL = styled.ul`
-    width: 100%;
-    height: 70px;
     display: flex;
     list-style-type: none;
-    background: #012439;
     display:flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     z-index: 9000;
 
     li {
@@ -23,7 +19,7 @@ const UL = styled.ul`
         }
 
         .active {
-            color:#84ca42 !important;
+            color:#426dca !important;
             border-bottom: solid .2rem;
             border-top: solid .2rem;
         }
@@ -34,7 +30,7 @@ const UL = styled.ul`
 
 const Menu = () => {
   return (
-    <>
+    <div className='w-100 pt-4'>
         <UL>
             <li>
                 <NavLink to='/' >Home</NavLink>
@@ -46,7 +42,7 @@ const Menu = () => {
                 <NavLink to='/contact' >Contact</NavLink>
             </li>
         </UL>
-    </>
+    </div>
   )
 }
 
