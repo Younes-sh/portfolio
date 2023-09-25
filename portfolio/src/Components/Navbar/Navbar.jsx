@@ -10,6 +10,7 @@ const Nav = styled.div `
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index:9000;
 `
 const Navbar = () => {
   return (
