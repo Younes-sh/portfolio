@@ -23,21 +23,23 @@ height: 450px;
 
 const IMG = styled.img`
     width: 90%;
-    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
+    clip-path: polygon(49% 0, 100% 0, 100% 35%, 95% 66%, 90% 84%, 66% 100%, 37% 100%, 12% 90%, 0 48%, 0 0);
     @media screen and (max-width: 720px) {
         width: 320px;
+    }
+    @media screen and (max-width:375px) {
+        margin:50px auto;
     }
 `
 
 const Header = () => {
   return (
-   <div className='w-100 h-100 border  pt-5 mt-5'>
+   <div className='w-100 h-100 pt-5 '>
     <Row className='container   m-auto '>
         <Col className='text-align-center pt-5 mt-5'>
-            <h1 className='text-dark text-start'>YOUNES</h1>
-            <h1 className='text-dark text-start'>SHEIKHLAR</h1>
-            <p className='text-dark text-start h3'>i'm a web Designer Front-End developer</p>
-            <div className='text-start d-flex flex-wrap '>
+            <h1 className='text-dark text-start'>YOUNES SHEIKHLAR</h1>
+            <p className='text-dark text-start h3 mt-5'>i'm a web Designer, Full stack developer</p>
+            <div className='text-start d-flex flex-wrap mt-5'>
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Node.js</span>
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >MongoDB</span>
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >React.js</span>
@@ -52,7 +54,7 @@ const Header = () => {
         </Col>
         <Col className='text-start pt-3'>
             <DIV className='w-100'>
-                <IMG src={Younes} alt="" />
+                <IMG src={Younes} alt="younes" />
             </DIV>
         </Col>
     </Row>
