@@ -19,9 +19,8 @@ const UL = styled.ul`
         }
 
         .active {
-            color:#426dca !important;
+            color:#fff !important;
             border-bottom: solid .2rem;
-            border-top: solid .2rem;
         }
     }
 `
