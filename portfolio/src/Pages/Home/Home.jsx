@@ -7,7 +7,7 @@ import Main from '../../Components/Main/Main';
 const Home = () => {
   return (
     <div className=' w-100 vh-100 pt-5'>
-      <Row className='pt-5'>
+      <Row className='my-5 pt-5'>
         <Col>
           <Header />
         </Col>
@@ -20,7 +20,7 @@ const Home = () => {
       </Row>
      
       <br />
-      <Row className='pt-5 mt-5'>
+      <Row className='py-5 my-5'>
         <Col>
           <Main />
         </Col>
