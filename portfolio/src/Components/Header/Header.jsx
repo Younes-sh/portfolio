@@ -34,7 +34,7 @@ const IMG = styled.img`
 
 const Header = () => {
   return (
-   <div className='w-100 h-100 pt-5 '>
+   <div  className='w-100 h-100 lg-mt-5 pt-5 '>
     <Row className='container   m-auto '>
         <Col className='text-align-center pt-5 mt-5'>
             <h1 className='text-dark text-start'>YOUNES SHEIKHLAR</h1>
