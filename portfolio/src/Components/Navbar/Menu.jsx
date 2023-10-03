@@ -10,12 +10,18 @@ const Menu = () => {
 
   const DIV = styled.div`
     .navbar a{
-      color:#fff;
-      marging:20px;
+      color:black;
+      marging:5px 20px;
       border-bottom-width: 2px ;
+      font-size:1.2rem;
+    }
+    @media screen and (max-wid:768px) {
+      .navbar a{
+        color:black
+      }
     }
     .navbar .active {
-      color:#c7e1ff;
+      color:brown;
       border-top:solid 2px;
     }
   `

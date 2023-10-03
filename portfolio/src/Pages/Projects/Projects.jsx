@@ -3,8 +3,9 @@ import CardProject from '../../Components/Cards/CardProject';
 
 const Projects = () => {
     const [ items , setItems ] = useState([]);
+    const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
-        fetch('http://localhost:5000/api/projects/')
+        fetch(`${URL_API}/api/projects`)
         .then(res => res.json())
         .then(res => setItems(res.data))
         .catch(error => console.log(error))
