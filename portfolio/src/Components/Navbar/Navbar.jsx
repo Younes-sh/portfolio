@@ -12,10 +12,18 @@ const Nav = styled.div `
   position: fixed;
   z-index:9000;
 `
+const ContainerMenu = styled.div`
+    visibility: visible
+    @media screen and(max-width:756px) {
+      visibility: hidden;
+    }
+`
 const Navbar = () => {
   return (
     <Nav>
-      <Menu />
+      <ContainerMenu className=''>
+        <Menu />
+      </ContainerMenu>
     </Nav>
   )
 }
