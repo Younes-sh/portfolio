@@ -18,7 +18,7 @@ app.get('/' , (req , res) => {
 app.use('/api/projects', projectRouter)
 
 app.use(cors({
-  origin: ['https://younessheikhlar.vercel.app/', 'http://localhost:3000'], // دامنه‌های منبع متفاوت
+  origin: ['http://localhost:3000', 'https://younessheikhlar.vercel.app'], // دامنه‌های منبع متفاوت
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
