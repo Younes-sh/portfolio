@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-          <Navbar />
-        <Routing />
+        <Navbar />
+        <div className=''>
+          <Routing />
+        </div>
       </BrowserRouter>
     </div>
   );
