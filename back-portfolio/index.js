@@ -3,12 +3,16 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config(); // خواندن مقادیر از فایل .env
+
+
 const projectRouter = require('./src/routes/projectRouter');
+
+
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 app.get('/' , (req , res) => {
-    res.send('Hi YOUNES')
+  res.send('Hi YOUNES')
 })
 
 app.use('/api/projects', projectRouter)
