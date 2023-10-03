@@ -11,8 +11,14 @@ app.get('/' , (req , res) => {
     res.send('Hi YOUNES')
 })
 
-app.use(cors());
 app.use('/api/projects', projectRouter)
+
+app.use(cors({
+  origin: ['https://sj84-watchface.vercel.app', 'http://localhost:3000'], // دامنه‌های منبع متفاوت
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
+  credentials: true, // اجازه‌ی ارسال کوکی‌ها
+}));
+
 
 
 
