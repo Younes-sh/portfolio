@@ -7,6 +7,13 @@ require('dotenv').config(); // خواندن مقادیر از فایل .env
 
 const projectRouter = require('./src/routes/projectRouter');
 
+app.use('/api/projects', projectRouter)
+
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://younessheikhlar.vercel.app'], // دامنه‌های منبع متفاوت
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
+  credentials: true, // اجازه‌ی ارسال کوکی‌ها
+}));
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
@@ -15,13 +22,6 @@ app.get('/' , (req , res) => {
   res.send('Hi YOUNES')
 })
 
-app.use('/api/projects', projectRouter)
-
-app.use(cors({
-  origin: ['http://localhost:3000', 'https://younessheikhlar.vercel.app'], // دامنه‌های منبع متفاوت
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
-  credentials: true, // اجازه‌ی ارسال کوکی‌ها
-}));
 
 
 
