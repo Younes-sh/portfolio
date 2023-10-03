@@ -14,7 +14,7 @@ app.get('/' , (req , res) => {
 app.use('/api/projects', projectRouter)
 
 app.use(cors({
-  origin: ['https://sj84-watchface.vercel.app', 'http://localhost:3000'], // دامنه‌های منبع متفاوت
+  origin: ['https://younessheikhlar.vercel.app/', 'http://localhost:3000'], // دامنه‌های منبع متفاوت
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
