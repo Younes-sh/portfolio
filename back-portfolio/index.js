@@ -7,6 +7,8 @@ require('dotenv').config(); // خواندن مقادیر از فایل .env
 
 const projectRouter = require('./src/routes/projectRouter');
 
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 
 app.use(cors({
   origin: ['http://localhost:3000', 'https://younessheikhlar.vercel.app'], // دامنه‌های منبع متفاوت
@@ -14,8 +16,6 @@ app.use(cors({
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
 
-app.use(express.urlencoded({extended:true}))
-app.use(express.json())
 
 app.get('/' , (req , res) => {
   res.send('Hi YOUNES')
