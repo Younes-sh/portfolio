@@ -19,5 +19,8 @@
     "mongoose": "^7.5.3",
     "mongoose-timestamp": "^0.6.0",
     "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
