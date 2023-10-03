@@ -22,11 +22,11 @@ const items = () => {
    
   return (
     <div className='w-100 container d-flex flex-wrap justify-content-around my-5 pt-5 '>
-        <Card IMG={Image1} title={Title1} text={Text1} />
-        <Card IMG={Image2} title={Title2} text={Text2} />
-        <Card IMG={Image3} title={Title3} text={Text3} />
-        <Card IMG={Image4} title={Title4} text={Text4} />
-        <Card IMG={Image5} title={Title5} text={Text5} />
+        <Card  IMG={Image1} title={Title1} text={Text1} />
+        <Card  IMG={Image2} title={Title2} text={Text2} />
+        <Card  IMG={Image3} title={Title3} text={Text3} />
+        <Card  IMG={Image4} title={Title4} text={Text4} />
+        <Card  IMG={Image5} title={Title5} text={Text5} />
         
     </div>
   )
