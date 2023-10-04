@@ -39,7 +39,7 @@ const CardProject = (props) => {
         
         {isShown && (
         <div className='glasmorphism text-start px-3 py-3' style={{width:'100%',position:'absolute',marginTop:'90px'}}>
-          <h3 className='text-start '>{props.title}Watchface</h3>
+          <h3 className='text-start '>{props.title}</h3>
           <Span className='description'style={{overflow:'hidden'}}>{props.details}</Span>
 
           <div className='d-flex justify-content-between pt-2'>
