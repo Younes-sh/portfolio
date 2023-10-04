@@ -17,7 +17,7 @@
     }
   ],
   "env": {
-    "MONGODB_URI": "@your-secret-mongodb-uri", 
+    "MONGODB_URI": "MONGODB_URI_SECRET", 
     "NODE_ENV": "production" 
   }
   
