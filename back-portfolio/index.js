@@ -18,19 +18,19 @@ app.use(cors({
 }));
 
 
+
+app.use('/api/projects', projectRouter)
+
 app.get('/' , (req , res) => {
   res.send('hello world')
 })
 
-app.use('/api/projects', projectRouter)
 
 
 
 
 
-
-
-MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
+MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME_DATABASE}:${process.env.MONGODB_PASSWORD_DATABASE}@items.2hmpcuz.mongodb.net/`
 
 // تنظیمات اتصال به دیتابیس
 const mongooseOptions = {
