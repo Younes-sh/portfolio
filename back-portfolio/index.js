@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 
-MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
+// MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
 
 // تنظیمات اتصال به دیتابیس
 const mongooseOptions = {
@@ -42,7 +42,7 @@ const mongooseOptions = {
   useUnifiedTopology: true,
 };
 
-mongoose.connect(MONGODB_URI, mongooseOptions)
+mongoose.connect(process.env.MONGODB_URI, mongooseOptions)
   .then(() => {
     console.log('Connected to MongoDB');
     // Your code here
