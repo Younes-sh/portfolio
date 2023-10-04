@@ -9,16 +9,5 @@ module.exports = function(app) {
       changeOrigin: true,
     })
   );
-
-  // ارتباط با بک‌اند دوم
-  app.use(
-    '/api/backend2', // مسیری که می‌خواهید به بک‌اند دوم ارتباط برقرار کنید
-    createProxyMiddleware({
-      target: 'http://localhost:5000', // آدرس بک‌اند دوم
-      changeOrigin: true,
-    })
-  );
 };
 
-
-// 'https://younessheikhlar.vercel.app',
