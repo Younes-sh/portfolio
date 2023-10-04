@@ -18,11 +18,11 @@ app.use(cors({
 }));
 
 
-app.get('/' , (req , res) => {
+app.get('/api/projects' , (req , res) => {
   res.send('Hi YOUNES')
 })
 
-app.use('/api/projects', projectRouter)
+app.use('/', projectRouter)
 
 
 
