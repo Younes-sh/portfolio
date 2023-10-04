@@ -18,11 +18,11 @@ app.use(cors({
 
 
 
-app.get('/' , (req , res) => {
+app.get('/api/projects' , (req , res) => {
   res.send('hello world')
 })
 
-app.use('/api/projects', projectRouter)
+app.use('/', projectRouter)
 
 if (process.env.NODE_ENV === 'production') {
   console.log('production');
