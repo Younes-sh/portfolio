@@ -5,7 +5,7 @@ module.exports = function(app) {
   app.use(
     '/api/backend1', // مسیری که می‌خواهید به بک‌اند اول ارتباط برقرار کنید
     createProxyMiddleware({
-      target: 'https://back-portfolio-nine.vercel.app/', // آدرس بک‌اند اول
+      target: 'https://portfolio-b-umber.vercel.app/', // آدرس بک‌اند اول
       changeOrigin: true,
     })
   );
