@@ -18,9 +18,9 @@ app.use(cors({
 
 
 
-app.use('/', projectRouter)
+app.use('/api/projects', projectRouter)
 
-app.get('/api/projects' , (req , res) => {
+app.get('/' , (req , res) => {
   res.send('hello world')
 })
 
