@@ -1,4 +1,3 @@
-process.env.NODE_ENV = "production";
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -26,6 +25,11 @@ app.get('/' , (req , res) => {
 })
 
 
+if (process.env.NODE_ENV === 'production') {
+  console.log('production');
+} else {
+  console.log('development');
+}
 
 
 
