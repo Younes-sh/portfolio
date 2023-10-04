@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 
-MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME_DATABASE}:${process.env.MONGODB_PASSWORD_DATABASE}@items.2hmpcuz.mongodb.net/`
+MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
 
 // تنظیمات اتصال به دیتابیس
 const mongooseOptions = {
