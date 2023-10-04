@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://younessheikhlar.vercel.app'], // دامنه‌های منبع متفاوت
+  origin: 'https://younessheikhlar.vercel.app', // دامنه‌های منبع متفاوت
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
