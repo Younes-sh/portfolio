@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
-require('dotenv').config(); // خواندن مقادیر از فایل .env
+require('dotenv').config(); 
 const helmet = require('helmet');
 const port = process.env.PORT;
 
@@ -10,34 +10,21 @@ const projectRouter = require('./src/routes/projectRouter');
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-
+app.use(helmet());
 app.use(cors({
-  origin: 'https://younessheikhlar.vercel.app', // دامنه‌های منبع متفاوت
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
-  credentials: true, // اجازه‌ی ارسال کوکی‌ها
+  origin: 'https://younessheikhlar.vercel.app', 
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', 
+  credentials: true, 
 }));
 
-app.use(helmet());
-
-
-app.get('/api/projects' , (req , res) => {
+app.get('/' , (req , res) => {
   res.send('hello world')
 })
 
-app.use('/', projectRouter)
-
-if (process.env.NODE_ENV === 'production') {
-  console.log('production');
-} else {
-  console.log('development');
-}
-
-
-
+app.use('/api/projects', projectRouter)
 
 DATABASE_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
 
-// تنظیمات اتصال به دیتابیس
 const mongooseOptions = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
