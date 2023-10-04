@@ -30,7 +30,7 @@ app.use('/api/projects', projectRouter)
 
 
 
-MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
+MONGODB_URI_DB = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
 
 // تنظیمات اتصال به دیتابیس
 const mongooseOptions = {
@@ -38,7 +38,7 @@ const mongooseOptions = {
   useUnifiedTopology: true,
 };
 
-mongoose.connect(MONGODB_URI, mongooseOptions)
+mongoose.connect(MONGODB_URI_DB, mongooseOptions)
   .then(() => {
     console.log('Connected to MongoDB');
     // Your code here
