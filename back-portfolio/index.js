@@ -41,7 +41,7 @@ const mongooseOptions = {
   useUnifiedTopology: true,
 };
 
-mongoose.connect(process.env.DATABASE_URI, mongooseOptions)
+mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`, mongooseOptions)
   .then(() => {
     console.log('Connected to MongoDB');
     // Your code here
