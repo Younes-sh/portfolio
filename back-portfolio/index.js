@@ -3,7 +3,8 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config(); // خواندن مقادیر از فایل .env
-const port = process.env.PORT
+const helmet = require('helmet');
+const port = process.env.PORT;
 
 const projectRouter = require('./src/routes/projectRouter');
 
@@ -16,6 +17,7 @@ app.use(cors({
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
 
+app.use(helmet());
 
 
 app.get('/api/projects' , (req , res) => {
