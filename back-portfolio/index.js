@@ -10,13 +10,13 @@ const projectRouter = require('./src/routes/projectRouter');
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
-app.use(cors({
-  origin: 'https://younessheikhlar.vercel.app', // دامنه‌های منبع متفاوت
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
-  credentials: true, // اجازه‌ی ارسال کوکی‌ها
-}));
+// app.use(cors({
+//   origin: 'https://younessheikhlar.vercel.app', // دامنه‌های منبع متفاوت
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
+//   credentials: true, // اجازه‌ی ارسال کوکی‌ها
+// }));
 
-
+app.use(cors());
 
 app.use('/', projectRouter)
 
