@@ -43,5 +43,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "react-dotenv": {
+    "whitelist": [
+      "REACT_APP_URL_API"
+    ]
   }
+
 }
