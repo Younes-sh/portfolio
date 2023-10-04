@@ -19,12 +19,6 @@
   "env": {
     "MONGODB_URI": "@your-secret-mongodb-uri", 
     "NODE_ENV": "production" 
-  },
-  "build": {
-    "env": {
-      "NODE_ENV": "production" 
-    },
-    "sourcemaps": false,
-    "clean": true 
   }
+  
 }
