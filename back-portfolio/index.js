@@ -30,7 +30,7 @@ app.use('/api/projects', projectRouter)
 
 
 
-MONGODB_URI_DB = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
+MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
 
 // تنظیمات اتصال به دیتابیس
 const mongooseOptions = {
