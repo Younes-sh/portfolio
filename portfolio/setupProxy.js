@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 module.exports = function(app) {
   // ارتباط با بک‌اند اول
   app.use(
-    '/api/backend1', // مسیری که می‌خواهید به بک‌اند اول ارتباط برقرار کنید
+    '/api', // مسیری که می‌خواهید به بک‌اند اول ارتباط برقرار کنید
     createProxyMiddleware({
       target: 'https://portfolio-d-iota.vercel.app', // آدرس بک‌اند اول
       changeOrigin: true,
