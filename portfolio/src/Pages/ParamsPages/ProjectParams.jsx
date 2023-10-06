@@ -16,7 +16,7 @@ const ProjectParams = () => {
     <div className='py-5 '>
         <Row className='container m-auto mt-5 pt-5 '>
             <Col lg={4} className=' text-start order-2 order-lg-1 mt-4 mt-lg-0'>
-                <h1 className='pt-5'>{item.title}s</h1>
+                <h1 className='pt-5'><span className='text-secondary'>Project:</span> {item.title}</h1>
                 <h5 className='mt-3'><span className='text-secondary'>Technology:</span> {item.details}</h5>
                 <p className='mt-5'>
                     {item.description}
@@ -27,7 +27,7 @@ const ProjectParams = () => {
                     <Link to={`/projects`} className='btn btn-info text-light'>Back to Projects page</Link>
                 </div>
             </Col>
-            <Col lg={8} className='order-1 order-lg-2'>
+            <Col lg={8} className='order-1 order-lg-2 shadow-lg p-0'>
                 <img style={{width:'100%'}} src={item.UrlImage} alt={item.title} />
             </Col>
     </Row>
