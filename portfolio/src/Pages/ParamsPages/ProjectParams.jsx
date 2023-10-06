@@ -13,11 +13,12 @@ const ProjectParams = () => {
         .catch(error => console.log(error))
     },[])
   return (
-    <div className='py-5'>
+    <div className='py-5 '>
         <Row className='container m-auto mt-5 pt-5 '>
             <Col lg={4} className=' text-start order-2 order-lg-1 mt-4 mt-lg-0'>
                 <h1 className='pt-5'>{item.title}s</h1>
-                <p>
+                <h5 className='mt-3'><span className='text-secondary'>Technology:</span> {item.details}</h5>
+                <p className='mt-5'>
                     {item.description}
                 </p>
 
