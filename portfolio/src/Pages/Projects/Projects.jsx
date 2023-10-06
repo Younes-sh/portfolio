@@ -13,9 +13,9 @@ const Projects = () => {
   return (
     <div className='w-100 100-vh pt-5'>
         <h1 className='pt-5'>Projects</h1>
-        <div className='container 100-vh my-3 d-flex flex-wrap '>
+        <div className='container 100-vh my-3 d-flex flex-wrap'>
         {
-            items.map(item => <CardProject key={items} {...item}/>)
+          items.map(item => <CardProject key={items} {...item}/>)
         }
         </div>
     </div>

@@ -30,11 +30,11 @@ const CardProject = (props) => {
       verflow: hidden;
     `
   return (
-    <Button className='mt-5 pt-5 ' style={{border:'none',background:'none',margin:'auto'}}
+    <Button className='mt-5 pt-5' style={{border:'none',background:'none',margin:'auto'}}
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
     >
-      <DIV className='box-shadow ' style={{ position:'relative',display:'flex'}}>
+      <DIV className='box-shadow ' style={{ position:'relative',display:'flex',}}>
         <img style={{width:'100%', height:'240px',position:'absolute'}} src={props.UrlImage} alt={props.title} />
         
         {isShown && (
@@ -43,7 +43,7 @@ const CardProject = (props) => {
           <Span className='description'style={{overflow:'hidden'}}>{props.details}</Span>
 
           <div className='d-flex justify-content-between pt-2'>
-            <Link to={`/projectparams/${props._id}`}className='btn btn-info'>info</Link>
+            <Link to={`/projectparams/${props._id}`}className='btn btn-info px-4'>more</Link>
             <Link target='_blank' to={`${props.directLink}`} className='btn btn-success'>View site</Link>
           </div>
         </div>
