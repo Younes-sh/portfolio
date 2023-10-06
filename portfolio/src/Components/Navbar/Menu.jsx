@@ -10,20 +10,20 @@ const Menu = () => {
 
   const DIV = styled.div`
     .navbar a{
-      color:black;
-      marging:5px 20px;
-      border-bottom-width: 2px ;
+      color:#fff;
       font-size:1.2rem;
+      margin:0 5px;
+      background-color:rgb(236,129,6);
     }
-    @media screen and (max-wid:768px) {
-      .navbar a{
-        color:black
-      }
-    }
+    
+    
     .navbar .active {
       color:brown;
-      border-top:solid 2px;
+      border-bottom:solid 2px #fff;
+      border-bottom-radius:5px;
+      
     }
+  
   `
   return (
     <DIV>
@@ -32,10 +32,10 @@ const Menu = () => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                <NavLink className='px-3 ' style={{textDecoration:'none'}} to='/' >Home</NavLink>
-                <NavLink className='px-3 ' style={{textDecoration:'none'}} to='/projects' >Projects</NavLink>
-                <NavLink className='px-3 ' style={{textDecoration:'none'}} to='/about' >About</NavLink>
-                <NavLink className='px-3 ' style={{textDecoration:'none'}} to='/contact' >Contact</NavLink>
+                <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/' >Home</NavLink>
+                <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/projects' >Projects</NavLink>
+                <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/about' >About</NavLink>
+                <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/contact' >Contact</NavLink>
                 {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
