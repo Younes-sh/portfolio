@@ -2,7 +2,7 @@ import Card from '../../Components/Cards/Card';
 
 import Image1 from '../../assets/Articls/Custom.png'
 import Image2 from '../../assets/Articls/Defining Web Application.jpg'
-import Image3 from '../../assets/Articls/Prototyping & Design Testing.jpg'
+import Image3 from '../../assets/Articls/Prototyping & Design Testing.png'
 import Image4 from '../../assets/Articls/Third Party Software Selections.jpg'
 import Image5 from '../../assets/Articls/Web Application Structure.jpg'
 
