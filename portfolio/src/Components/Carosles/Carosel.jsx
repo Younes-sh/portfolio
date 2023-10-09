@@ -3,37 +3,26 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function Carosel() {
-  const [data, setData] = useState([]);
+  const [items, setData] = useState([]);
 
   const API_URL = process.env.REACT_APP_URL_API;
 
-//   const response = await fetch('http://localhost:5000/api/projects');
+
  
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://localhost:5000/api/projects');
-        const result = await response.json();
-  
-        // تبدیل داده به یک آرایه
-        const dataArray = Array.from(result);
-  
-        setData(dataArray);
-      } catch (error) {
-        console.error('خطا در دریافت داده‌ها: ', error);
-      }
-    };
-  
-    fetchData();
+    fetch(`${API_URL}/api/projects/`)
+    .then(res => res.json())
+    .then(res => setData(res.data))
+     
   }, []);
   
   
 
   return (
-    <div className="Carosel">
-      <Carousel>
-        {data.map((item, index) => (
+    <div className="Carosel container ">
+      <Carousel className='w-75 m-auto'>
+        {items.map((item, index) => (
           <div key={index}>
             <img src={item.UrlImage} alt={item.title} />
             <p className="legend">{item.title}</p>
