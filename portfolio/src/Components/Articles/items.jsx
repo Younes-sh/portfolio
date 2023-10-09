@@ -12,11 +12,11 @@ const Title3 = "Web Application Structure";
 const Title4 = "Research & UX Workflow";
 const Title5 = "Third-Party Software Selections";
 
-const Text1 = "We integrate disparate business systems and processes, add web service functionality to your existing applications, and synchronize data across those applications.";
-const Text2 = "Whether you require a Web Development Solution developed from scratch, or a third-party integration to add to your existing app, Chetu can get the job done quickly, effectively, and affordably.";
-const Text3 = "Our developers create a database architecture to effectively collect, store, retrieve, sort, and graph all of your data in your new integrated Custom Website or Application.";
-const Text4 = "Our website developers dive deep into research and analysis to uncover the most effective strategies for improving user experiences across the board.";
-const Text5 = "Our Custom Website Developers research and test the best state-of-the-art technologies, programming languages, and third-party vendors to integrate within your custom website or app.";
+const Text1 = "I integrate disparate systems and business processes, add web service functionality to your existing applications, and synchronize data across those applications.";
+const Text2 = "Whether you require a Web Development Solution developed from scratch, or a third-party integration to add to your existing app, I can get the job done quickly, effectively, and affordably.";
+const Text3 = "I will design your site using new methods. You will also get support in the shortest possible time";
+const Text4 = "I integrate your site with other technologies.";
+const Text5 = "Create a dynamic single page site using up-to-date technology such as React.js.";
 
 const items = () => {
    
