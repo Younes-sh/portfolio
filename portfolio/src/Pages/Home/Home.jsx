@@ -2,8 +2,8 @@ import React from 'react';
 import {Row,Col} from 'react-bootstrap'
 import Header from '../../Components/Header/Header';
 import Items from '../../Components/Articles/items';
-import Main from '../../Components/Main/Main';
-import Favorites from '../../Components/Favorites/Favorites';
+import SkilsComponent from '../../Components/Skils/SkilsComponent';
+import Carosel from '../../Components/Carosles/Carosel';
 
 const Home = () => {
   return (
@@ -21,11 +21,11 @@ const Home = () => {
       </Row>
      
       <br />
-      {/* <Row className='py-5 my-5'>
+      <Row className='py-5 my-5'>
         <Col>
-          <Main />
+          <Carosel />
         </Col>
-      </Row> */}
+      </Row>
 
       <br />
       {/* <Row className='py-5 my-5'>
