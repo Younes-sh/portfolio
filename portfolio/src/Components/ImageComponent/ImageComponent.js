@@ -30,6 +30,7 @@ const ImageComponent = ({Title,Image,Alt}) => {
   const ShowImage = styled.div`
     width:80%;
     margin-top:-300px;
+    padding:30px;
     position:absolute;
     z-index:2;
     display:flex;
