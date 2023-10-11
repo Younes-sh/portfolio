@@ -1,29 +1,70 @@
-import React, { useState } from 'react';
+import {useState , useEffect} from 'react';
+import './style.css';
+import styled from 'styled-components';
 
-function ImageComponent({ imageUrl }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+const ImageComponent = ({Title,Image,Alt}) => {
+  const [isLarge , setIsLarge] = useState()
 
-  const openModal = () => {
-    setIsModalOpen(true);
+  //  Photo Zoom operation
+  const LargeImage = () => {
+    setIsLarge(true)
+  }
+  // Photo unzoom operation
+  const CloseImage = () => {
+    setIsLarge(false)
+  }
+
+  // download image operation
+  const downloadImage = () => {
+    const imageUrl = Image
+    const a = document.createElement('a');
+    a.href = imageUrl;
+    a.download = 'image.jpg'; // Set the desired filename
+    a.click();
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  }; 
+  const Container = styled.div`
+    width:100%;
+    height:auto;
+  `
+  const ShowImage = styled.div`
+    width:80%;
+    margin-top:-300px;
+    position:absolute;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    left:200px;
+  `
+  const Button = styled.button`
+    backgroundColor:none;
+    border:none;
+  `
 
   return (
-    <div>
-      <img src={imageUrl} alt="عکس" onClick={openModal} style={{cursor:'pointer'}} />
-      {isModalOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal w-100">
-            <img src={imageUrl} alt="تصویر بزرگ" />
-            <button onClick={closeModal}>بستن</button>
-          </div>
-        </div>
-      )}
-    </div>
-  );
+    <Container >
+      <div className=''>
+        <p>{Title}</p>
+        <button onClick={LargeImage} >
+          <img style={{width:'200px'}} src={Image} alt={Alt} />
+        </button>
+      <hr  />
+      </div>
+
+      {
+        isLarge && (
+          <ShowImage className='morphism-gray'>
+            <div>
+              <Button className='mx-2 btn btn-danger'  onClick={CloseImage}>&#128473;Close</Button>
+              <button onClick={downloadImage} className='mx-2 btn btn-success'>Download</button>
+            </div>
+              <img style={{width:'60%',margin:'auto'}}  src={Image} alt={Alt}/>
+          </ShowImage>
+        )
+      }
+    </Container>
+  )
 }
 
-export default ImageComponent;
+export default ImageComponent
