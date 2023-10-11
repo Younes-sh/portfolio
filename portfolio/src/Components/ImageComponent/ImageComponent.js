@@ -57,8 +57,8 @@ const ImageComponent = ({Title,Image,Alt}) => {
         isLarge && (
           <ShowImage className='morphism-gray'>
             <div>
-              <Button className='mx-2 btn btn-danger'  onClick={CloseImage}>&#128473;Close</Button>
-              <button onClick={downloadImage} className='mx-2 btn btn-success'>Download</button>
+              <Button className='mx-2 px-4 btn btn-danger'  onClick={CloseImage}>&#128473;Close</Button>
+              <button className='mx-2 btn btn-success' onClick={downloadImage} >Download</button>
             </div>
               <img style={{width:'60%',margin:'auto'}}  src={Image} alt={Alt}/>
           </ShowImage>
