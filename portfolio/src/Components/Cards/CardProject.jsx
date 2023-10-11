@@ -5,8 +5,10 @@ import styled from 'styled-components';
 const CardProject = (props) => {
   const [isShown, setIsShown] = useState(false);
   const Button = styled.button`
-    padding:0 5px;
+  margin:0 15px;
     @media (max-width: 768px) {
+      width:95%;
+      margin:auto;
       padding:0;
     }
   `
@@ -14,13 +16,12 @@ const CardProject = (props) => {
   const DIV = styled.div`
     width:400px;
     height:240px;
-    margine:20px;
-    background-color:red;
+    margine:20px 0;
     hover:{
       scale: 1.25;
     }
     @media (max-width: 768px) {
-      width:360px;
+      width:100%;
       margine:20px auto;
     }
     
@@ -30,11 +31,11 @@ const CardProject = (props) => {
       verflow: hidden;
     `
   return (
-    <Button className='mt-5 pt-5' style={{border:'none',background:'none',margin:'auto'}}
+    <Button className='mt-5 pt-5' style={{border:'none',background:'none'}}
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
     >
-      <DIV className='box-shadow ' style={{ position:'relative',display:'flex',}}>
+      <DIV className='box-shadow ' style={{ position:'relative',display:'flex', justifyContent:'center'}}>
         <img style={{width:'100%', height:'240px',position:'absolute'}} src={props.UrlImage} alt={props.title} />
         
         {isShown && (
