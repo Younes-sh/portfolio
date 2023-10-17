@@ -22,7 +22,7 @@ const About = () => {
         <p className="pt-5"></p>
         </Col>
         <Col lg={4} className=' pt-5'>
-          <ImageComponent Title={'CV'}Image={Image1}  urlToHugeImageFile={Image1} Alt={'cv'} />
+          <ImageComponent Title={'CV'}Image={Image1}   Alt={'cv'} />
         </Col>
       </Row>
       
