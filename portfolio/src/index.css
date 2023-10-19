@@ -23,10 +23,20 @@ code {
 
 .glasmorphism {
   height:  150px;
+  padding: 10px;
   transition: height 5s;
   backdrop-filter: blur(1px) saturate(180%);
   -webkit-backdrop-filter: blur(1px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.63);
+  z-index: 8;
+  width: 100%;
+  height:160px;
+  margin-top: -140px;
+}
+@media screen and (max-width: 768px) {
+  .glasmorphism  {
+    /* height:70px; */
+  }
 }
 .box-shadow {
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.233);
