@@ -27,7 +27,8 @@ const ProjectParams = () => {
                     <Link to={`/projects`} className='btn btn-info text-light'>Back to Projects page</Link>
                 </div>
             </Col>
-            <Col lg={8} className='order-1 order-lg-2 shadow-lg p-0'>
+            <Col lg={8} className='order-1 order-lg-2 shadow-lg p-0 position-relative'>
+                <img style={{width:'50px',marginTop:'-20px'}} className=' position-absolute' src={item.situation} />
                 <img style={{width:'100%'}} src={item.UrlImage} alt={item.title} />
             </Col>
     </Row>
