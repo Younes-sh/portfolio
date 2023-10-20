@@ -21,7 +21,7 @@ const ContainerMenu = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-      <ContainerMenu className=''>
+      <ContainerMenu className='d-flex justify-content-center'>
         <Menu />
       </ContainerMenu>
     </Nav>

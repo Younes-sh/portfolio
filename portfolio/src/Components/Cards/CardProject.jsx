@@ -42,16 +42,16 @@ const DIV = styled.div`
 
           {isShown && (
             <div className='glasmorphism text-start  ' >
-              <h3 className='text-start'>{props.title}</h3>
+              <h3 className='text-start Capsmall'>{props.title}</h3>
               <span>
                 {props.details}
               </span>
 
               <div className='d-flex justify-content-between pt-2'>
-                <Link to={`/projectparams/${props._id}`} className='btn btn-info px-4'>
+                <Link to={`/projectparams/${props._id}`} className=' btn btn-info px-4'>
                   more
                 </Link>
-                <Link target='_blank' to={props.directLink} className='btn btn-success'>
+                <Link target='_blank' to={props.directLink} className=' btn btn-success'>
                   View site
                 </Link>
               </div>

@@ -1,9 +1,15 @@
 import { useState , useEffect } from 'react';
 import { useParams , Link} from 'react-router-dom';
 import { Row , Col} from 'react-bootstrap';
+import styled from 'styled-components'
 const ProjectParams = () => {
     const [ item , setItem] = useState([]);
     const itemID = useParams().itemID;
+
+    const IMG = styled.img `
+        width:60px;
+        transform:rotate(-40deg);
+    `
 
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
@@ -16,7 +22,7 @@ const ProjectParams = () => {
     <div className='py-5 '>
         <Row className='container m-auto mt-5 pt-5 '>
             <Col lg={4} className=' text-start order-2 order-lg-1 mt-4 mt-lg-0'>
-                <h1 className='pt-5'><span className='text-secondary'>Project:</span> {item.title}</h1>
+                <h3 className='pt-5'><span className='text-secondary'>Project:</span> {item.title}</h3>
                 <h5 className='mt-3'><span className='text-secondary'>Technology:</span> {item.details}</h5>
                 <p className='mt-5'>
                     {item.description}
@@ -28,7 +34,7 @@ const ProjectParams = () => {
                 </div>
             </Col>
             <Col lg={8} className='order-1 order-lg-2 shadow-lg p-0 position-relative'>
-                <img style={{width:'50px',marginTop:'-20px'}} className=' position-absolute' src={item.situation} />
+                <IMG  className=' position-absolute' src={item.situation} />
                 <img style={{width:'100%'}} src={item.UrlImage} alt={item.title} />
             </Col>
     </Row>
