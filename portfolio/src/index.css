@@ -18,6 +18,43 @@ code {
     monospace;
 }
 
+/* Fonts */
+@font-face {
+  font-family: "fFinish";
+  src: local("fFinish"),
+   url("./assets/Fonts/fFinish.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "3D";
+  src: local("3D"),
+   url("./assets/Fonts/3D.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Brodcast";
+  src: local("Brodcast"),
+   url("./assets/Fonts/BroadcastTitling.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Capsmall";
+  src: local("Capsmall"),
+   url("./assets/Fonts/Capsmall.ttf") format("truetype");
+}
+ 
+ .fFinish {
+  font-family: "fFinish";
+ }
+
+ .treeD {
+  font-family: "3D";
+}
+
+.Brodcast {
+  font-family: "Brodcast";
+}
+.Capsmall {
+  font-family: "Capsmall";
+}
 
 /*  */
 
@@ -42,3 +79,26 @@ code {
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.233);
 }
 
+/* Contact */
+
+.CardContact {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 12.5px );
+  -webkit-backdrop-filter: blur( 12.5px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.borderRadius {
+  border-radius: 100% 0% 100% 0% / 0% 58% 42% 100% ;
+}
+.borderRadiusImae {
+  border-radius: 100% 0% 100% 0% / 0% 58% 42% 80% ;
+}
+.Test {
+  backdrop-filter: blur(1px) saturate(180%);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.63);
+}
