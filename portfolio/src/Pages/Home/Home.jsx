@@ -3,36 +3,33 @@ import {Row,Col} from 'react-bootstrap'
 import Header from '../../Components/Header/Header';
 import Items from '../../Components/Articles/items';
 import SkilsComponent from '../../Components/Skils/SkilsComponent';
-import Carosel from '../../Components/Carosles/Carosel';
-
+// import Carosel from '../../Components/Carosles/Carosel';
+import Learning from '../../Components/Learning/Learning';
+import Gif from '../../assets/SVG/giphy.svg';
 const Home = () => {
   return (
-    <div className=' w-100 vh-100 pt-5'>
+    <div className='container w-100 vh-100 pt-2  pt-lg-5'>
       <Row className='my-5 pt-5'>
         <Col>
           <Header />
         </Col>
       </Row>
       {/* Main */}
-      <Row className='pt-5 mt-5'>
+      <Row className='my-lg-5 py-5'>
         <Col>
           <Items />
         </Col>
       </Row>
      
       <br />
-      <Row className='py-5 my-5'>
+
+      <Row className='my-lg-5 py-5 '>
         <Col>
-          <Carosel />
+          <Learning />
         </Col>
       </Row>
 
       <br />
-      {/* <Row className='py-5 my-5'>
-        <Col>
-          <Favorites />
-        </Col>
-      </Row> */}
       
     </div>
   )
