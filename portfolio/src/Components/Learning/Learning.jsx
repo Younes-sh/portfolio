@@ -6,19 +6,19 @@ const Learning = () => {
     <div className='w-100 h-auto px-4'>
       <Row>
         <Col className='m-auto' lg={6}>
+          <h1 className='text-center Capsmall' >Learning</h1>
           <img className='w-100' src="https://user-images.githubusercontent.com/74038190/212748842-9fcbad5b-6173-4175-8a61-521f3dbb7514.gif" alt="" />
           {/* <img className='w-100' src="https://user-images.githubusercontent.com/74038190/264141683-8aa99f6c-267d-4977-9cd3-1a4c11675863.gif" alt="" /> */}
         </Col>
       </Row>
       <Row>
-            <Col className='order-2 order-lg-1 mt-5 mt-lg-0 ' lg={8}>
-              <h2 className='text-start Capsmall' >Learning</h2>
+            <Col style={{textAlign:''}} className='order-2 order-lg-1 mt-5 mt-lg-0 ' lg={8}>
               <h2 className='text-start treeD' >React Navtive</h2>
               <br />
 
               <h1 className='text-start mt-lg-3'>Embracing Mobile App Development with React Native</h1>
               <h4 className='text-start mt-lg-5 pt-5 pt-lg-1 '>Introduction</h4>
-              <p className="text-start  Justify ">As a passionate and aspiring mobile app developer, I've recently embarked on a thrilling journey into the world of mobile application development. My interest in this dynamic field has led me to explore the exciting possibilities that mobile apps offer, and I'm eager to share my progress and learning experiences.</p>
+              <p  className="text-start   ">As a passionate and aspiring mobile app developer, I've recently embarked on a thrilling journey into the world of mobile application development. My interest in this dynamic field has led me to explore the exciting possibilities that mobile apps offer, and I'm eager to share my progress and learning experiences.</p>
 
               <h4 className='text-start mt-lg-5'>Discovering React Native:</h4>
               <p className='text-start'>One of the most significant milestones on my path to becoming a mobile app developer is my introduction to React Native. I've recently started my journey with this powerful framework, and I'm already captivated by its potential. React Native allows me to craft mobile applications for both iOS and Android platforms, all while utilizing a single codebase written in JavaScript and React.</p>

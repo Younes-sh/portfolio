@@ -27,10 +27,23 @@ const DIV = styled.div`
   }
 `;
 
+const IMG = styled.img `
+  width:50px;
+  margin-top: 100px;
+  right:0;
+  position:absolute;
+  transform:rotate(30deg);
+  @media (max-width: 768px) {
+    width: 28px;
+    margin-top: 90px;
+    right:-17px;
+  }
+`
 
 
   return (
     <div style={{ position: 'relative' }}>
+      <IMG  src={props.situation} alt="" />
       <Button
         className='mt-5 pt-5'
         style={{ border: 'none', background: 'none' }}
