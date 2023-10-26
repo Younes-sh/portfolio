@@ -2,7 +2,7 @@ import {useState , useEffect} from 'react';
 import './style.css';
 import styled from 'styled-components';
 
-const ImageComponent = ({Title,Image,Alt}) => {
+const ImageComponent = ({Title,Image,Alt,PDF}) => {
   const [isLarge , setIsLarge] = useState()
 
   //  Photo Zoom operation
@@ -22,6 +22,13 @@ const ImageComponent = ({Title,Image,Alt}) => {
     a.download = 'image.jpg'; // Set the desired filename
     a.click();
   };
+  const downloadPDF = () => {
+    const PDFUrl = PDF
+    const a = document.createElement('a');
+    a.href = PDFUrl;
+    a.download = 'CV-Sheikhlar.pdf'; // Set the desired filename
+    a.click();
+  };
 
   const Container = styled.div`
     width:100%;
@@ -29,7 +36,7 @@ const ImageComponent = ({Title,Image,Alt}) => {
   `
   const ShowImage = styled.div`
     width:80%;
-    margin-top:-300px;
+    margin-top:-400px;
     padding:30px;
     position:absolute;
     z-index:2;
@@ -49,7 +56,7 @@ const ImageComponent = ({Title,Image,Alt}) => {
 
   return (
     <Container >
-        <p>{Title}</p>
+        <p>Click on {Title}</p>
       <div className=''>
         <button onClick={LargeImage} >
           <img style={{width:'200px'}} src={Image} alt={Alt} />
@@ -60,9 +67,10 @@ const ImageComponent = ({Title,Image,Alt}) => {
       {
         isLarge && (
           <ShowImage className='morphism-gray d-flex justify-content-start '>
-            <div>
-              <Button className='mx-2 px-4 btn btn-danger'  onClick={CloseImage}>&#128473;Close</Button>
-              <button className='mx-2 btn btn-success' onClick={downloadImage} >Download</button>
+            <div className='d-flex flex-wrap justify-content-center '>
+              <Button className='m-2 px-4 btn btn-danger'  onClick={CloseImage}>&#128473;Close</Button>
+              <button className='m-2 btn btn-success' onClick={downloadImage} >Download png</button>
+              <button className='m-2 btn btn-success' onClick={downloadPDF} >Download PDF</button>
             </div>
               <img style={{width:'90%',margin:'auto'}}  src={Image} alt={Alt}/>
           </ShowImage>
