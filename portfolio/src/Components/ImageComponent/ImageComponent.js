@@ -36,7 +36,11 @@ const ImageComponent = ({Title,Image,Alt}) => {
     display:flex;
     flex-direction:column;
     justify-content:center;
-    left:200px;
+    right:200px;
+
+    @media screen and (max-width:1419px) {
+      left:10%;
+    }
   `
   const Button = styled.button`
     backgroundColor:none;
@@ -45,8 +49,8 @@ const ImageComponent = ({Title,Image,Alt}) => {
 
   return (
     <Container >
-      <div className=''>
         <p>{Title}</p>
+      <div className=''>
         <button onClick={LargeImage} >
           <img style={{width:'200px'}} src={Image} alt={Alt} />
         </button>
@@ -55,12 +59,12 @@ const ImageComponent = ({Title,Image,Alt}) => {
 
       {
         isLarge && (
-          <ShowImage className='morphism-gray'>
+          <ShowImage className='morphism-gray d-flex justify-content-start '>
             <div>
               <Button className='mx-2 px-4 btn btn-danger'  onClick={CloseImage}>&#128473;Close</Button>
               <button className='mx-2 btn btn-success' onClick={downloadImage} >Download</button>
             </div>
-              <img style={{width:'60%',margin:'auto'}}  src={Image} alt={Alt}/>
+              <img style={{width:'90%',margin:'auto'}}  src={Image} alt={Alt}/>
           </ShowImage>
         )
       }
