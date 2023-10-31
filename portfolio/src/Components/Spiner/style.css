@@ -1,4 +1,12 @@
-.loader {
+.Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container .loader {
   border: 10px solid #f3f3f3;
   border-top: 10px solid #ba34db;
   border-radius: 50%;

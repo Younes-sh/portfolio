@@ -4,7 +4,9 @@ import './style.css';
 function BorderExample() {
   // return <Spinner animation="border" />;
   return (
-    <div className="loader"></div>
+    <div className='Container'>
+      <div className="loader"></div>
+    </div>
   )
 }
 
