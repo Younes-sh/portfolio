@@ -21,7 +21,7 @@ const Projects = () => {
         <div className='container 100-vh my-3 d-flex flex-wrap justify-content-center'>
           {loading ? ( // اگر در حال بارگیری هستیم، اسپینر را نمایش بده
             <div className='w-100 100-vh mt-5 pt-5 d-flex justify-content-center align-items-center'>
-              <Spinner animation="border" />
+              <Spinner  />
             </div>
             ) : (
             items.map(item => <CardProject key={item.id} {...item} />)

@@ -18,7 +18,6 @@ const DIV = styled.div`
   width: 400px;
   height: 225px;
   margin: 20px 0;
-  background-color:red;
  
   @media (max-width: 768px) {
     width: 280px;
