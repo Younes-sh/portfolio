@@ -7,6 +7,7 @@
 }
 
 .Container .loader {
+  top:10%;
   border: 10px solid #f3f3f3;
   border-top: 10px solid #ba34db;
   border-radius: 50%;
