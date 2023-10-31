@@ -10,6 +10,7 @@ const ProjectParams = () => {
         width:60px;
         transform:rotate(-40deg);
     `
+   
 
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
@@ -24,7 +25,7 @@ const ProjectParams = () => {
             <Col lg={4} className=' text-start order-2 order-lg-1 mt-4 mt-lg-0'>
                 <h3 className='pt-5'><span className='text-secondary'>Project:</span> {item.title}</h3>
                 <h5 className='mt-3'><span className='text-secondary'>Technology:</span> {item.details}</h5>
-                <p className='mt-5'>
+                <p style={{textAlign:'justify'}} className='mt-5'>
                     {item.description}
                 </p>
 
