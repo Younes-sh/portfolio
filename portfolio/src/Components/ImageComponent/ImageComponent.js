@@ -1,8 +1,9 @@
-import {useState , useEffect} from 'react';
+import {useState} from 'react';
 import './style.css';
 import styled from 'styled-components';
+import PdfComponent from './PdfComponent'
 
-const ImageComponent = ({Title,Image,Alt,PDF}) => {
+const ImageComponent = ({Title,Image,Alt}) => {
   const [isLarge , setIsLarge] = useState()
 
   //  Photo Zoom operation
@@ -20,13 +21,6 @@ const ImageComponent = ({Title,Image,Alt,PDF}) => {
     const a = document.createElement('a');
     a.href = imageUrl;
     a.download = 'image.jpg'; // Set the desired filename
-    a.click();
-  };
-  const downloadPDF = () => {
-    const PDFUrl = PDF
-    const a = document.createElement('a');
-    a.href = PDFUrl;
-    a.download = 'CV-Sheikhlar.pdf'; // Set the desired filename
     a.click();
   };
 
@@ -70,9 +64,9 @@ const ImageComponent = ({Title,Image,Alt,PDF}) => {
             <div className='d-flex flex-wrap justify-content-center '>
               <Button className='m-2 px-4 btn btn-danger'  onClick={CloseImage}>&#128473;Close</Button>
               <button className='m-2 btn btn-success' onClick={downloadImage} >Download png</button>
-              <button className='m-2 btn btn-success' onClick={downloadPDF} >Download PDF</button>
+              <PdfComponent />
             </div>
-              <img style={{width:'90%',margin:'auto'}}  src={Image} alt={Alt}/>
+              <img style={{width:'90%',margin:'auto'}} src={Image}  alt={Alt}/>
           </ShowImage>
         )
       }

@@ -2,7 +2,8 @@ import React from 'react';
 import './about.css';
 import {Row , Col} from 'react-bootstrap';
 import ImageComponent from '../../Components/ImageComponent/ImageComponent';
-import Image1 from '../../assets/CV-sheikhlar.png';
+import Image1 from '../../assets/About/CV-sheikhlar.png';
+import CvPDF from '../../assets/About/CV-Sheikhlar.pdf'
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
         <p className="pt-5"></p>
         </Col>
         <Col lg={4} className=' pt-5 d-flex '>
-          <ImageComponent Title={'CV'}Image={Image1}   Alt={'cv'} />
+          <ImageComponent Title={'CV'} Image={Image1}  PDF={CvPDF} Alt={'cv'} />
         </Col>
       </Row>
       
