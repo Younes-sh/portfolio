@@ -17,10 +17,10 @@ const Projects = () => {
           .catch(error => console.log(error));
   }, []);
   return (
-    <div className='w-100 100-vh pt-5'>
-        <div className='container 100-vh my-3 d-flex flex-wrap justify-content-center'>
+    <div className='w-100 100-vh '>
+        <div className='container 100-vh  d-flex flex-wrap justify-content-center'>
           {loading ? ( // اگر در حال بارگیری هستیم، اسپینر را نمایش بده
-            <div className='w-100 100-vh mt-5 pt-5 d-flex justify-content-center align-items-center'>
+            <div className='w-100 100-vh  d-flex justify-content-center align-items-center'>
               <Spinner  />
             </div>
             ) : (
