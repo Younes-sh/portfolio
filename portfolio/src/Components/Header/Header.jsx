@@ -45,7 +45,7 @@ const Header = () => {
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Node.js</span>
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >MongoDB</span>
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >React.js</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Bootstrap</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >React-native</span>
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Tailwind</span>
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Express.js</span>
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >MUI</span>
