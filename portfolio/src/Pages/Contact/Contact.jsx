@@ -9,6 +9,15 @@ import Location from '../../assets/Contact/location.png';
 import Email from '../../assets/Contact/email.png';
 
 const Contact = () => {
+  const [data, setData] = useState({});
+
+  const controlHndler = (e) => {
+    setData({...data, [e.target.name ] : e.target.value})
+  }
+
+  const senHandler = () => {
+
+  }
   return (
     <div className='Contact  d-flex align-items-center  pt-sm-5'>
       <div className='container   pt-sm-5'>
@@ -42,11 +51,11 @@ const Contact = () => {
         <Col lg={8} className='mt-5  mt-lg-0'>
               <div className='d-flex flex-column border-2 formContact mt-5 mt-lg-0'>
                 <h1>Let's work <span style={{color:'#EC8106'}}>together</span></h1>
-                <input className='textinput' type="text" placeholder='Name *'/>
-                <input className='textinput' type="text" placeholder='Email *'/>
-                <input className='textinput' type="text" placeholder='Your subject *' />
-                <textarea className='textinput' type="text" rows={7} />
-                <button>Send Message</button>
+                <input onChange={(e) => controlHndler(e , 'name')} name='name' className='textinput' type="text" placeholder='Name *'/>
+                <input onChange={(e) => controlHndler(e , 'email')} name='email' className='textinput' type="text" placeholder='Email *'/>
+                <input onChange={(e) => controlHndler(e , 'subject')} name='subject' className='textinput' type="text" placeholder='Your subject *' />
+                <textarea onChange={(e) => controlHndler(e , 'message')} name='message' className='textinput' type="text" rows={7}  placeholder='Message'></textarea>
+                <button onClick={senHandler} type='button'>Send Message</button>
               </div>
         </Col>
         

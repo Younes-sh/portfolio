@@ -13,9 +13,8 @@ const PdfComponent = ({PDF}) => {
 
 
   return (
-    <div >
-        <a className='m-2 btn btn-success'  href={PDF} target="_blank">Download PDF</a>
-        <button onClick={downloadPDF}>Download PDF</button>
+    <div>
+      <button onClick={downloadPDF}>PDF</button>
     </div>
   )
 }
