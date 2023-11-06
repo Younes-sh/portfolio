@@ -1,11 +1,57 @@
 .Contact {
     width: 100%;
     height: 100vh;
-    background-image: url(https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: end;
-    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000f1;
+}
+.Contact .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.containerContact div {
+    margin-top: 20px;
+}
+.containerContact div img {
+   padding: 15px;
+   border-radius: 5px;
+   background: rgb(13,12,12);
+   background: linear-gradient(211deg, rgb(32, 32, 32) 0%, rgba(33,31,31,1) 51%, rgb(43, 39, 39) 100%);
+}
+
+
+
+.formContact {
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+    background: rgb(13,12,12);
+    background: linear-gradient(211deg, rgba(13,12,12,1) 0%, rgba(33,31,31,1) 51%, rgba(84,80,80,1) 100%);
+    align-items: center;
+}
+
+.formContact .textinput {
+    width: 95%;
+    margin-top: 12px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #ccc;
+    background: rgb(47,45,45);
+    background: linear-gradient(211deg, rgba(47,45,45,1) 0%, rgba(84,80,80,1) 100%);
+}
+
+.formContact button {
+    width: 95%;
+    margin-top: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    background: rgb(32, 32, 32);
+    background: linear-gradient(211deg, rgb(26, 23, 23) 0%, rgb(19, 17, 17) 51%, rgb(31, 29, 29) 100%);
+    color: aliceblue;
+}
