@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import './style.css';
 import styled from 'styled-components';
-import PdfComponent from './PdfComponent'
+import PdfComponent from './PdfComponent';
 
 const ImageComponent = ({Title,Image,Alt}) => {
   const [isLarge , setIsLarge] = useState()
@@ -63,7 +63,7 @@ const ImageComponent = ({Title,Image,Alt}) => {
           <ShowImage className='morphism-gray d-flex justify-content-start '>
             <div className='d-flex flex-wrap justify-content-center '>
               <Button className='m-2 px-4 btn btn-danger'  onClick={CloseImage}>&#128473;Close</Button>
-              <button className='m-2 btn btn-success' onClick={downloadImage} >png</button>
+              <button className='m-2 btn btn-success' onClick={downloadImage} >PNG</button>
               <PdfComponent />
             </div>
               <img style={{width:'90%',margin:'auto'}} src={Image}  alt={Alt}/>

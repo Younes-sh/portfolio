@@ -1,22 +1,17 @@
 
-const PdfComponent = ({PDF}) => {
-  // download image operation
-  const downloadPDF = () => {
-    const a = document.createElement('a');
-    a.href = PDF;
-    a.download = 'CV-Sheikhlar.pdf'; // نام فایل PDF دلخواه
-    a.style.display = 'none';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  };
+import PDF from '../../assets/About/YOUNESSHEIKHLAR.pdf'
 
+function PDFDownloadButton() {
+ 
 
   return (
-    <div>
-      <button onClick={downloadPDF}>PDF</button>
-    </div>
-  )
+    // <button className='m-2 btn btn-success' onClick={handleDownload}>
+    //    PDF
+    // </button>
+    <>
+      <a className='m-2 btn btn-success' href={PDF}>PDF</a>
+    </>
+  );
 }
 
-export default PdfComponent
+export default PDFDownloadButton;
