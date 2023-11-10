@@ -20,7 +20,7 @@ const Projects = () => {
     <div className='w-100 100-vh '>
         <div className='container 100-vh  d-flex flex-wrap justify-content-center'>
           {loading ? ( // اگر در حال بارگیری هستیم، اسپینر را نمایش بده
-            <div className='w-100 100-vh  d-flex justify-content-center align-items-center'>
+            <div className='w-100 100-vh  d-flex justify-content-center '>
               <Spinner  />
             </div>
             ) : (
