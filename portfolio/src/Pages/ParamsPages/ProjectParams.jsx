@@ -38,7 +38,12 @@ const ProjectParams = () => {
                 <IMG  className=' position-absolute' src={item.situation} />
                 <img style={{width:'100%'}} src={item.UrlImage} alt={item.title} />
             </Col>
-    </Row>
+        </Row>
+        <Row>
+            <Col lg={12} className='w-100 h-100'>
+                <div style={{width:'100%',height:'0px',position:'relative',paddingBottom:'56.294%'}}><iframe src={item.UrlVideo} frameborder="0" width="100%" height="100%" allowfullscreen style={{width:'100%',height:'100%',position:'absolute',left:'0px',top:'0px',overflow:'hidden'}}></iframe></div>
+            </Col>
+        </Row>
     </div>
   )
 }
