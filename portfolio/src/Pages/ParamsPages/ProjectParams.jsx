@@ -41,7 +41,10 @@ const ProjectParams = () => {
         </Row>
         <Row>
             <Col lg={12} className='w-100 h-100'>
-                <div style={{width:'100%',height:'0px',position:'relative',paddingBottom:'56.294%'}}><iframe src={item.UrlVideo} frameborder="0" width="100%" height="100%" allowfullscreen style={{width:'100%',height:'100%',position:'absolute',left:'0px',top:'0px',overflow:'hidden'}}></iframe></div>
+                <div style={{width:'100%',height:'0px',position:'relative',paddingBottom:'56.294%'}}>
+                    {/* <iframe src={item.UrlVideo} frameborder="0" width="100%" height="100%" allowfullscreen style={{width:'100%',height:'100%',position:'absolute',left:'0px',top:'0px',overflow:'hidden'}}></iframe> */}
+                    <iframe allow="autoplay" frameborder="0" src={item.UrlVideo} width="100%" height="740" allowfullscreen></iframe>
+                </div>
             </Col>
         </Row>
     </div>
