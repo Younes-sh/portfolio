@@ -6,7 +6,8 @@ const schemaProject = new mongoose.Schema({
     description:{type:String,required:true},
     UrlImage:{type:String,required:true},
     directLink:{type:String,required:true},
-    details:{type:String,required:true}
+    details:{type:String,required:true},
+    UrlVideo:{type:String,required:true}
 })
 
 schemaProject.plugin(timeStamp)
