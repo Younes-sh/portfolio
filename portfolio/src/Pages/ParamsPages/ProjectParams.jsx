@@ -30,8 +30,8 @@ const ProjectParams = () => {
                 </p>
 
                 <div className='d-flex justify-content-between'>
-                    <Link target='_blank' to={`${item.directLink}`} className='btn btn-success'>View Site</Link>
                     <Link to={`/projects`} className='btn btn-info text-light'>Back to Projects page</Link>
+                    <Link target='_blank' to={`${item.directLink}`} className='btn btn-success'>View Site</Link>
                 </div>
             </Col>
             <Col lg={8} className='order-1 order-lg-2 shadow-lg p-0 position-relative'>
