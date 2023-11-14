@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(helmet());
 app.use(cors({
-  origin: ['https://younessheikhlar.vercel.app', 'https://younessheikhlar.be'],
+  origin: ['https://younessheikhlar.be','https://younessheikhlar.vercel.app' ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', 
   credentials: true, 
 }));
