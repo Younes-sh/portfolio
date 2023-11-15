@@ -24,7 +24,7 @@ const Projects = () => {
               <Spinner  />
             </div>
             ) : (
-              <div className=' d-flex justify-content-center '>
+              <div className=' d-flex flex-wrap justify-content-center '>
               {
               items.map(item => <CardProject key={item.id} {...item} />)
 
