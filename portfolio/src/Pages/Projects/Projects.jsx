@@ -24,7 +24,12 @@ const Projects = () => {
               <Spinner  />
             </div>
             ) : (
-            items.map(item => <CardProject key={item.id} {...item} />)
+              <div className=' d-flex justify-content-center '>
+              {
+              items.map(item => <CardProject key={item.id} {...item} />)
+
+              }
+            </div>
           )}
         </div>
     </div>
