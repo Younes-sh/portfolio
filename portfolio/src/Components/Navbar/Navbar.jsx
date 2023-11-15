@@ -13,10 +13,10 @@ const Nav = styled.div `
   z-index:9000;
 `
 const ContainerMenu = styled.div`
-    visibility: visible
-    @media screen and(max-width:756px) {
-      visibility: hidden;
-    }
+  visibility: visible
+  @media screen and(max-width:756px) {
+    visibility: hidden;
+  }
 `
 const Navbar = () => {
   return (
