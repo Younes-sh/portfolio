@@ -13,15 +13,16 @@ const Nav = styled.div `
   z-index:9000;
 `
 const ContainerMenu = styled.div`
-  visibility: visible
-  @media screen and(max-width:756px) {
-    visibility: hidden;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:30px;
+
 `
 const Navbar = () => {
   return (
     <Nav>
-      <ContainerMenu className='d-flex justify-content-center'>
+      <ContainerMenu >
         <Menu />
       </ContainerMenu>
     </Nav>
