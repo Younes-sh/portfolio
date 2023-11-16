@@ -11,8 +11,8 @@ import Email from '../../assets/Contact/email.png';
 const Contact = () => {
 
   return (
-    <div className='Contact   d-flex  pt-5 text-light'>
-      <div className='contect vh-100  h-sm-100  d-flex   mt-5 pt-5'>
+    <div className='Contact   py-5   pt-5 text-light'>
+      <div className='container h-100   d-flex   mt-5 pt-5'>
         <div className='w-100 d-lg-flex flex-wrap  justify-content-center  text-start'>
           <div  className='d-flex flex-lg-column  align-items-center w-sm-100  w-lg-25 ' >
             <div className='d-flex flex-column justify-content-sm-around  align-items-center align-items-lg-start mx-auto   containerContact'>
@@ -45,7 +45,7 @@ const Contact = () => {
           {/* Form */}
 
 
-          <div  className='w-md-100 w-lg-75 mt-sm-5 mt-md-5 d-flex justify-content-sm-center   justify-content-md-center justify-content-lg-end mt-lg-0 '>
+          <div  className='w-md-100 w-lg-75 mt-sm-5 mt-md-5 d-flex justify-content-center    justify-content-lg-end mt-lg-0 '>
             <div className='d-flex flex-column  formContact mt-5 mt-lg-0 bg-danger'>
               <p className='fs-3'>Let's work <span style={{color:'#EC8106'}}>together</span></p>
               <Form />
