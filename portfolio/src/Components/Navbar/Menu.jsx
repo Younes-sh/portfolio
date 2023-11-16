@@ -9,15 +9,21 @@ import './style.css'
 const Menu = () => {
 
   const DIV = styled.div`
-    
+    .ContentMenu{
+      @media screen and (max-width: 992px) {
+        height: auto;
+        margin: 6px auto;
+        padding: 10px 0 10px 0;
+        border-radius:0 0 10px 10px;
+        right:0;
+        background-color: #EC8106;
+      }
+    }
     .navbar a{
       color:#fff;
       font-size:1.2rem;
       margin:0 5px;
     }
-    
- 
-    
     .navbar .active {
       color:#403920;
       
@@ -45,7 +51,7 @@ const Menu = () => {
                 
             <Container className='content '>
               <Navbar.Toggle aria-controls="basic-navbar-nav " />
-                <Navbar.Collapse id="basic-navbar-nav" className='w-100  '>
+                <Navbar.Collapse id="basic-navbar-nav" className='w-100  ContentMenu'>
                 <Nav className="me-auto ">
                 <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/' ><span className='fancy'>Home</span></NavLink>
                 <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/projects' ><span className='fancy'>Projects</span></NavLink>
