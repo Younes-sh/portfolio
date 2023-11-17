@@ -13,7 +13,9 @@ function Form() {
     const URL_API = process.env.REACT_APP_URL_API
   
     const senHandler = () => {
-      axios.post(`http://localhost:5000/api/collaborate`, data || `${URL_API}/api/collaborate`)
+      
+      axios.post(`${URL_API}/api/collaborate`)
+      
     }
 
 
