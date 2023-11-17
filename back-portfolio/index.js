@@ -7,12 +7,13 @@ const helmet = require('helmet');
 const port = process.env.PORT;
 
 const projectRouter = require('./src/routes/projectRouter');
+const CollaborateRouter = require('./src/routes/formeCollaborateRoute');
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(helmet());
 app.use(cors({
-  origin: ['https://younessheikhlar.vercel.app', 'https://younessheikhlar.be'],
+  origin: ['https://younessheikhlar.vercel.app', 'https://younessheikhlar.be', 'http://localhost:3000'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', 
   credentials: true, 
 }));
@@ -22,7 +23,8 @@ app.get('/' , (req , res) => {
   res.send('hello world')
 })
 
-app.use('/api/projects', projectRouter)
+app.use('/api/projects', projectRouter);
+app.use('/api/collaborate' , CollaborateRouter);
 
 DATABASE_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
 
