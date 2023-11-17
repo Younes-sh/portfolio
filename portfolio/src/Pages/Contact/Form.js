@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function Form() {
 
-    const [data, setData] = useState({});
+  const [data, setData] = useState({ name: '', email: '', yourSubject: '', message: '' });
 
     const controlHndler = (e) => {
       setData({...data, [e.target.name ] : e.target.value})
@@ -13,9 +13,13 @@ function Form() {
     const URL_API = process.env.REACT_APP_URL_API
   
     const senHandler = () => {
-      
       axios.post( `${URL_API}/api/collaborates`,data)
-      
+      .then(() => {
+        setData({ name: '', email: '', yourSubject: '', message: '' }); // پس از ارسال داده‌ها، input ها را خالی کنید
+      })
+      .catch((error) => {
+        console.error('Error sending data:', error);
+      });
     }
 
 
