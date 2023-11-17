@@ -14,7 +14,7 @@ function Form() {
   
     const senHandler = () => {
       
-      axios.post(`${URL_API}/api/collaborate`)
+      axios.post(`http://localhost:5000/api/collaborates`, data && `${URL_API}/api/collaborates`)
       
     }
 
