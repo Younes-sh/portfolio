@@ -41,7 +41,7 @@ const IMG = styled.img `
 
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: 'relative' }} >
       <IMG  src={props.situation} alt="" />
       <Button
         className='mt-5 pt-5'

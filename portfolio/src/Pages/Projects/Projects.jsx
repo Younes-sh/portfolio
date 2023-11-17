@@ -8,7 +8,7 @@ const Projects = () => {
 
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
-      fetch(`${URL_API}/api/projects`)
+      fetch(`${URL_API}/api/projects` && 'http://localhost:5000/api/projects/')
           .then(res => res.json())
           .then(res => {
               setItems(res.data);
@@ -24,7 +24,7 @@ const Projects = () => {
               <Spinner  />
             </div>
             ) : (
-              <div className=' d-flex flex-wrap justify-content-center '>
+              <div className=' d-flex flex-wrap  justify-content-center justify-content-lg-start  m-auto'>
               {
               items.map(item => <CardProject key={item.id} {...item} />)
 
