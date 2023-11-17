@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import "./style.css";
+import axios from 'axios';
 
 function Form() {
 
@@ -8,17 +9,21 @@ function Form() {
     const controlHndler = (e) => {
       setData({...data, [e.target.name ] : e.target.value})
     }
+
+    const URL_API = process.env.REACT_APP_URL_API
   
     const senHandler = () => {
-  
+      axios.post(`http://localhost:5000/api/collaborate`, data || `${URL_API}/api/collaborate`)
     }
+
+
   return (
     <div className='px-4'>
-        <input onChange={(e) => controlHndler(e , 'name')} name='name' className='textinput' type="text" placeholder='Name *'/>
-        <input onChange={(e) => controlHndler(e , 'email')} name='email' className='textinput' type="text" placeholder='Email *'/>
-        <input onChange={(e) => controlHndler(e , 'subject')} name='subject' className='textinput' type="text" placeholder='Your subject *' />
-        <textarea onChange={(e) => controlHndler(e , 'message')} name='message' className='textinput' type="text" rows={7}  placeholder='Message'></textarea>
-        <button onClick={senHandler} type='button'>Send Message</button>
+      <input onChange={(e) => controlHndler(e , 'name')} name='name' className='textinput' type="text" placeholder='Name *'/>
+      <input onChange={(e) => controlHndler(e , 'email')} name='email' className='textinput' type="text" placeholder='Email *'/>
+      <input onChange={(e) => controlHndler(e , 'yourSubject')} name='yourSubject' className='textinput' type="text" placeholder='Your subject *' />
+      <textarea onChange={(e) => controlHndler(e , 'message')} name='message' className='textinput' type="text" rows={7}  placeholder='Message'></textarea>
+      <button onClick={senHandler} type='button'>Send Message</button>
     </div>
   )
 }
