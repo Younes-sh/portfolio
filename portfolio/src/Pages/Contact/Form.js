@@ -29,7 +29,7 @@ function Form() {
       <input onChange={(e) => controlHndler(e , 'email')} name='email' className='textinput' type="text" placeholder='Email *'/>
       <input onChange={(e) => controlHndler(e , 'yourSubject')} name='yourSubject' className='textinput' type="text" placeholder='Your subject *' />
       <textarea onChange={(e) => controlHndler(e , 'message')} name='message' className='textinput' type="text" rows={7}  placeholder='Message'></textarea>
-      <button onClick={senHandler} type='button'>Send Message</button>
+      <button onClick={senHandler} type='button' className='ButtonForm'>Send Message</button>
     </div>
   )
 }
