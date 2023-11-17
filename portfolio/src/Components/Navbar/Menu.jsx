@@ -48,8 +48,8 @@ const Menu = () => {
           <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
         </ul>
       </div >
+      <img src={PapaNoel} alt="" style={{width:'60px',marginTop:-20 ,marginLeft:'100px', position:'absolute'}} />
       <Navbar className='navbar ' expand="lg" style={{position:'fixed',marginTop:'-20px',marginLeft:'-200px'}}>
-      <img src={PapaNoel} alt="" style={{width:'60px',marginTop:-10}} />
                 
             <Container className='content '>
               <Navbar.Toggle aria-controls="basic-navbar-nav " />
