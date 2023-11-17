@@ -24,7 +24,7 @@ app.get('/' , (req , res) => {
 })
 
 app.use('/api/projects', projectRouter);
-app.use('/api/collaborate' , CollaborateRouter);
+app.use('/api/collaborates' , CollaborateRouter);
 
 DATABASE_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@items.2hmpcuz.mongodb.net/`
 
