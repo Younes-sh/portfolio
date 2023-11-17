@@ -5,6 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import styled from 'styled-components';
 import './style.css'
+import snowflake from '../../assets/Navbar/snowflake.png';
+import PapaNoel from '../../assets/Navbar/papanoel.gif';
 
 const Menu = () => {
 
@@ -34,20 +36,20 @@ const Menu = () => {
     <DIV>
       <div class="area" >
         <ul class="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
+          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
         </ul>
       </div >
       <Navbar className='navbar ' expand="lg" style={{position:'fixed',marginTop:'-20px',marginLeft:'-200px'}}>
-      
+      <img src={PapaNoel} alt="" style={{width:'60px',marginTop:-10}} />
                 
             <Container className='content '>
               <Navbar.Toggle aria-controls="basic-navbar-nav " />
