@@ -8,7 +8,7 @@ const Projects = () => {
 
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
-      fetch(`${URL_API}/api/projects` && 'http://localhost:5000/api/projects/')
+      fetch(`${URL_API}/api/projects`)
           .then(res => res.json())
           .then(res => {
               setItems(res.data);
