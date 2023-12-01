@@ -19,18 +19,32 @@ const DIV = styled.div`
 width: 350px;
 height: 450px;
   border-radius:  30% 70% 70% 30% / 34% 30% 70% 66%  ;
+
   background: #e28317;
+
+  @media screen and (max-width: 720px) {
+    border-radius:  44% 44% 44% 44% / 44% 44% 44% 44%  ;
+}
   
 `
 
 const IMG = styled.img`
     width: 90%;
     clip-path: polygon(49% 0, 100% 0, 100% 35%, 95% 66%, 90% 84%, 66% 100%, 37% 100%, 12% 90%, 0 48%, 0 0);
+    @media screen and (max-width: 980px) {
+        margin-top:50px;
+    }
     @media screen and (max-width: 720px) {
+        margin:40px;
+    }
+    @media screen and (max-width: 711px) {
         width: 320px;
     }
     @media screen and (max-width:375px) {
-        margin:50px auto;
+        margin:50px -40px;
+    }
+    @media screen and (max-width:331px) {
+        margin:50px -60px;
     }
 `
 
@@ -38,7 +52,7 @@ const Header = () => {
   return (
    <div  className='w-100 h-100 lg-mt-5 pt-lg-5 '>
     <Row className='container   m-auto '>
-        <Col className='text-align-center pt-lg-5 mt-lg-5'>
+        <Col lg={6} className='text-align-center pt-lg-5 mt-lg-5'>
             <h1 className='text-dark text-start Capsmall'>YOUNES SHEIKHLAR</h1>
             <p className='text-dark text-start h3 mt-5'>I am a Web designer, Full stack developer</p>
             <div className='text-start d-flex flex-wrap mt-5'>
@@ -54,9 +68,9 @@ const Header = () => {
                 <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Bootstrap</span>
             </div>
         </Col>
-        <Col className='text-start pt-3'>
+        <Col lg={6} className='text-start pt-3 '>
             <DIV className='w-100'>
-                <IMG src={Younes} alt="younes" />
+                <IMG  src={Younes} alt="younes" />
             </DIV>
         </Col>
     </Row>
