@@ -37,7 +37,7 @@ const ProjectParams = () => {
                     <Link target='_blank' to={`${item.directLink}`} className='btn btn-success'>View Site</Link>
                 </div>
                 <div className='mt-3'>
-                    <Link to={`${item.github}`} className='btn btn-dark d-flex align-center justify-center' ><img src={GitHub} alt="Github" style={{width:'30px'}} />Github</Link>
+                    <Link target='_blank' to={`${item.github}`} className='btn btn-dark d-flex align-center justify-center' ><img src={GitHub} alt="Github" style={{width:'30px'}} />Github</Link>
                 </div>
             </Col>
             <Col lg={8} className='order-1 order-lg-2 shadow-lg p-0 position-relative'>
