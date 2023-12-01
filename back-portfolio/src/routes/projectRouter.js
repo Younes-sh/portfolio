@@ -28,7 +28,8 @@ router.post('/' , async (req , res) => {
         UrlImage:req.body.description,
         directLink:req.body.directLink,
         details:req.body.details,
-        UrlVideo:req.body.UrlVideo
+        UrlVideo:req.body.UrlVideo,
+        github:req.body.github
     })
     newProject = await newProject.save()
     res.json({
@@ -45,7 +46,8 @@ router.put('/:id' , async (req , res) =>{
             UrlImage:req.body.UrlImage,
             directLink:req.body.directLink,
             details:req.body.details,
-            UrlVideo:req.body.UrlVideo
+            UrlVideo:req.body.UrlVideo,
+            github:req.body.github
         }, {new:true})
 
         if (!project) {
