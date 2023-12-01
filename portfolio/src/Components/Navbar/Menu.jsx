@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -9,6 +10,11 @@ import snowflake from '../../assets/Navbar/snowflake.png';
 import PapaNoel from '../../assets/Navbar/papanoel.gif';
 
 const Menu = () => {
+  const [expanded, setExpanded] = useState();
+
+  const handleSelect = () => {
+    setExpanded(); // Close the Navbar when a Nav item is selected
+  };
 
   const DIV = styled.div`
     .ContentMenu{
@@ -48,20 +54,24 @@ const Menu = () => {
           <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
         </ul>
       </div >
-      <img src={PapaNoel} alt="" style={{width:'60px',marginTop:-20 ,marginLeft:'100px', position:'absolute'}} />
-      <Navbar className='navbar ' expand="lg" style={{position:'fixed',marginTop:'-20px',marginLeft:'-200px'}}>
+      <img src={PapaNoel} alt="" style={{width:'60px',marginLeft:'100px',marginTop:'-12px' , position:'absolute'}} />
+      <Navbar className='navbar ' expand="lg" style={{marginLeft:'-200px'}}>
                 
-            <Container className='content '>
-              <Navbar.Toggle aria-controls="basic-navbar-nav " />
-                <Navbar.Collapse id="basic-navbar-nav" className='w-100  ContentMenu'>
-                <Nav className="me-auto ">
-                <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/' ><span className='fancy'>Home</span></NavLink>
-                <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/projects' ><span className='fancy'>Projects</span></NavLink>
-                <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/about' ><span className='fancy'>About</span></NavLink>
-                <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/contact' ><span className='fancy'>Contact</span></NavLink>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
+        <Container className='content '>
+          <Navbar.Toggle
+          style={{position:'fixed'}}
+            aria-controls="basic-navbar-nav "
+            onClick={() => setExpanded(false)}
+          />
+          <Navbar.Collapse id="basic-navbar-nav" className='w-100  ContentMenu' style={{marginTop:'200px',position:'fixed'}}>
+            <Nav className="me-auto "  onClick={() => setExpanded(expanded ? false : 'expanded')}>
+              <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/' ><span className='fancy'>Home</span></NavLink>
+              <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/projects' ><span className='fancy'>Projects</span></NavLink>
+              <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/about' ><span className='fancy'>About</span></NavLink>
+              <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/contact' ><span className='fancy'>Contact</span></NavLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
     </DIV>
     )
