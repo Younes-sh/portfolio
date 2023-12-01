@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const GitHub = 'https://cdn4.iconfinder.com/data/icons/bettericons/354/github-512.png'
 
 const CardProject = (props) => {
   const [isShown, setIsShown] = useState(false);
@@ -63,6 +64,7 @@ const IMG = styled.img `
                 <Link to={`/projectparams/${props._id}`} className=' btn btn-info px-4'>
                   more
                 </Link>
+                <Link to={props.github} className=' btn btn-dark'><img src={GitHub} alt="Github" style={{width:'30px',backgroundColorcolor:'#fff'}} /> Github</Link>
                 <Link target='_blank' to={props.directLink} className=' btn btn-success'>
                   View site
                 </Link>
