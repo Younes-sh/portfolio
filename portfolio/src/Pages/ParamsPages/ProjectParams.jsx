@@ -1,7 +1,10 @@
 import { useState , useEffect } from 'react';
 import { useParams , Link} from 'react-router-dom';
 import { Row , Col} from 'react-bootstrap';
-import styled from 'styled-components'
+import styled from 'styled-components';
+
+const GitHub = 'https://cdn4.iconfinder.com/data/icons/bettericons/354/github-512.png'
+
 const ProjectParams = () => {
     const [ item , setItem] = useState([]);
     const itemID = useParams().itemID;
@@ -32,6 +35,9 @@ const ProjectParams = () => {
                 <div className='d-flex justify-content-between'>
                     <Link to={`/projects`} className='btn btn-info text-light'>Back to Projects page</Link>
                     <Link target='_blank' to={`${item.directLink}`} className='btn btn-success'>View Site</Link>
+                </div>
+                <div className='mt-3'>
+                    <Link to={`${item.github}`} className='btn btn-dark d-flex align-center justify-center' ><img src={GitHub} alt="Github" style={{width:'30px'}} />Github</Link>
                 </div>
             </Col>
             <Col lg={8} className='order-1 order-lg-2 shadow-lg p-0 position-relative'>
