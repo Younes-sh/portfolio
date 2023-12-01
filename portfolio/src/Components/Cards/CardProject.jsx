@@ -64,7 +64,7 @@ const IMG = styled.img `
                 <Link to={`/projectparams/${props._id}`} className=' btn btn-info px-4'>
                   more
                 </Link>
-                <Link to={props.github} className=' btn btn-dark'><img src={GitHub} alt="Github" style={{width:'20px',backgroundColorcolor:'#fff'}} /> Github</Link>
+                {/* <Link to={props.github} className=' btn btn-dark'><img src={GitHub} alt="Github" style={{width:'20px',backgroundColorcolor:'#fff'}} /> Github</Link> */}
                 <Link target='_blank' to={props.directLink} className=' btn btn-success'>
                   View site
                 </Link>
