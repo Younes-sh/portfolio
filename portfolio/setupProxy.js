@@ -9,5 +9,14 @@ module.exports = function(app) {
       changeOrigin: true,
     })
   );
+
+  // ارتباط با بک‌اند لوکال
+  app.use(
+    '/', // مسیری که می‌خواهید به بک‌اند لوکال ارتباط برقرار کنید
+    createProxyMiddleware({
+      target: 'http://localhost:5000', // آدرس بک‌اند لوکال
+      changeOrigin: true,
+    })
+  );
 };
 
