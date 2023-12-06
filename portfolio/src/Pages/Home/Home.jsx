@@ -4,7 +4,6 @@ import Header from '../../Components/Header/Header';
 import Items from '../../Components/Articles/items';
 import SkilsComponent from '../../Components/Skils/SkilsComponent';
 // import Carosel from '../../Components/Carosles/Carosel';
-import Learning from '../../Components/Learning/Learning';
 import Gif from '../../assets/SVG/giphy.svg';
 const Home = () => {
   return (
@@ -25,7 +24,7 @@ const Home = () => {
 
       <Row className='my-lg-5 py-5 '>
         <Col>
-          <Learning />
+          {/* <Learning /> */}
         </Col>
       </Row>
 
