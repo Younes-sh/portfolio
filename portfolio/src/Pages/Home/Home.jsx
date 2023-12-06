@@ -4,7 +4,6 @@ import Header from '../../Components/Header/Header';
 import Items from '../../Components/Articles/items';
 import SkilsComponent from '../../Components/Skils/SkilsComponent';
 // import Carosel from '../../Components/Carosles/Carosel';
-import Gif from '../../assets/SVG/giphy.svg';
 const Home = () => {
   return (
     <div className='container w-100 vh-100 pt-2  pt-lg-5'>
