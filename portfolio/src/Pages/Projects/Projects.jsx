@@ -1,6 +1,7 @@
 import {useState , useEffect} from 'react';
 import CardProject from '../../Components/Cards/CardProject';
-import Spinner  from '../../Components/Spiner/Spiner';
+
+import Spiner from '../../Components/Spiner/Spiner';
 
 const Projects = () => {
     const [ items , setItems ] = useState([]);
@@ -21,7 +22,7 @@ const Projects = () => {
         <div className='container 100-vh  d-flex flex-wrap justify-content-start'>
           {loading ? ( // اگر در حال بارگیری هستیم، اسپینر را نمایش بده
             <div className='w-100 100-vh  d-flex justify-content-center mt-5 pt-5 '>
-              <Spinner  />
+              <Spiner  />
             </div>
             ) : (
               <div className=' d-flex flex-wrap  justify-content-center justify-content-lg-start  m-auto'>
@@ -32,6 +33,7 @@ const Projects = () => {
             </div>
           )}
         </div>
+        
     </div>
   )
 }
