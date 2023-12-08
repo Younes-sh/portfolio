@@ -20,7 +20,7 @@ const Contact = () => {
               <div className='m-auto  '>
                 <div >
                   <img className='' src={Email} alt="email" />
-                  <span> <a style={{textDecoration:'none', color:'#fff'}} href="mailto:sheikhlaryounes@gmail.com" className='text-dark'> sheikhlaryounes@gmail.com</a></span>
+                  <span style={{width:'100px'}}> <a style={{textDecoration:'none', color:'#fff', width:'100%'}} href="mailto:sheikhlaryounes@gmail.com" className='text-dark'> sheikhlaryounes@gmail.com</a></span>
                 </div>
 
                 <div className=' '>
