@@ -9,15 +9,14 @@ const About = () => {
     <div className='w-100  pt-5 About '>
       <Row className='container m-auto mt-4 pt-5'>
         <Col lg={8} className=' text-start mt-5 p-4'>
-          <h3>About me</h3>
-        After working few years as a pharmacy assistant, I have decided to switch to the development field. During my bootcamp at Becode, I have gained experience in basic website design issues such as HTML, CSS and Javascript. I also have worked with frameworks and libraries, which include: Bootstrap, Tailwind, React.js , Next.js, MySql, Docker. Now, I am looking for an internship starting from November 2022.
+          <h2 style={{color:'#EC8106'}} >About me</h2>
+          I am an organized, determined, and creative person who is eager to work with established or growing companies. I am looking for a position as a front-end developer in a dynamic and innovative company where I can use my skills and experience to achieve growth, success and development by providing strategic solutions to challenges.
 
-        <p className='pt-5'>Après avoir suivi 1 an de formation en Becode et deux années de formation continue en React.js et React-Native, j’aspire à trouver mon premier emploi en tant que développeur web. Même si je n’ai pas encore d’expérience concrètes en entreprises, j’ai cependant développé de nombreux projets personnels pendant mon temps libre.</p>
-        <p className='pt-5'>
-        J’ai également réalisé un stage du décembre 2022 au février 2023 chez SMILE, un start up qui offre un service de mise en relation pour pharmacie et particuliers. 
-        </p>
 
-        <p className="pt-5">Ayant un goût pour l’analyse rigoureuse et sans filtre des résultats, j’ai relevé de nombreux challenges et n'hésite pas à remettre en question mes certitudes afin d’atteindre mes objectifs.</p>
+        <p className='pt-5'>I am a diligent person with a keen interest in learning new technologies. Consequently, I exhibit great flexibility in my work approach and eagerly anticipate engaging in new projects to further expand my technological expertise.</p>
+        
+
+        <p className="pt-5">My passion lies in problem-solving, and I am inherently focused on achieving tangible results in my work.</p>
         <p className="pt-5"></p>
         <p className="pt-5"></p>
         </Col>
