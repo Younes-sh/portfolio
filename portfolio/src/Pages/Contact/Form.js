@@ -24,7 +24,7 @@ function Form() {
 
 
   return (
-    <div className='px-4'>
+    <div className='px-4' style={{backgroundColor:'#EC8106'}}>
       <input onChange={(e) => controlHndler(e , 'name')} name='name' className='textinput' type="text" placeholder='Name *'/>
       <input onChange={(e) => controlHndler(e , 'email')} name='email' className='textinput' type="text" placeholder='Email *'/>
       <input onChange={(e) => controlHndler(e , 'yourSubject')} name='yourSubject' className='textinput' type="text" placeholder='Your subject *' />
