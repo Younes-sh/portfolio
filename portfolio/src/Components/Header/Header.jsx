@@ -20,7 +20,7 @@ width: 350px;
 height: 450px;
   border-radius:  30% 70% 70% 30% / 34% 30% 70% 66%  ;
 
-  background: #e28317;
+  background: #EC8106;
 
   @media screen and (max-width: 720px) {
     border-radius:  44% 44% 44% 44% / 44% 44% 44% 44%  ;
@@ -56,16 +56,18 @@ const Header = () => {
             <h1 className='text-dark text-start Capsmall'>YOUNES SHEIKHLAR</h1>
             <p className='text-dark text-start h3 mt-5'>I am a Web designer, Full stack developer</p>
             <div className='text-start d-flex flex-wrap mt-5'>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Node.js</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >MongoDB</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >React.js</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >React-native</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Tailwind</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Express.js</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >MUI</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >UI/UX</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >SASS</span>
-                <span className='px-3 text-light' style={{backgroundColor:'#f19e3e', margin:'5px',borderRadius:'5px'}} >Bootstrap</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Node.js</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >MongoDB</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >React.js</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >React-native</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Tailwind</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Express.js</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >MUI</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >UI/UX</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >SASS</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Bootstrap</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Photoshop</span>
+                <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Adobe illustrator</span>
             </div>
         </Col>
         <Col lg={6} className='text-start pt-3 '>

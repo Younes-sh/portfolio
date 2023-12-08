@@ -22,6 +22,10 @@ const ProjectParams = () => {
         .then(res => setItem(res.data))
         .catch(error => console.log(error))
     },[])
+
+    useEffect(() => {
+
+    },[])
   return (
     <div className='py-5 '>
         <Row className='container m-auto mt-5 pt-5 '>
@@ -36,9 +40,15 @@ const ProjectParams = () => {
                     <Link to={`/projects`} className='btn btn-info text-light'>Back to Projects page</Link>
                     <Link target='_blank' to={`${item.directLink}`} className='btn btn-success'>View Site</Link>
                 </div>
-                <div className='mt-3'>
-                    <Link target='_blank' to={`${item.github}`} className='btn btn-dark d-flex align-center justify-center' ><img src={GitHub} alt="Github" style={{width:'30px'}} />Github</Link>
-                </div>
+                
+
+                {
+                    item.github ?  (
+                        <div className='mt-3'> 
+                            <Link target='_blank' to={`${item.github}`} className='btn btn-dark d-flex align-center justify-center' ><img src={GitHub} alt="Github" style={{width:'30px'}} />Github</Link>
+                        </div>
+                    ) : <p className='bg-warning mt-3 p-3  rounded-2'>Access to GitHub is not possible. It is private</p>
+                }
             </Col>
             <Col lg={8} className='order-1 order-lg-2 shadow-lg p-0 position-relative'>
                 <IMG  className=' position-absolute' src={item.situation} />
