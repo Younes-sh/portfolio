@@ -1,12 +1,18 @@
-import React from 'react';
+import {useEffect} from 'react';
+
 import './about.css';
 import {Row , Col} from 'react-bootstrap';
 import ImageComponent from '../../Components/ImageComponent/ImageComponent';
 import Image1 from '../../assets/About/CV-sheikhlar.png';
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // اسکرول به بالای صفحه
+  },[])
   return (
     <div className='w-100  pt-5 About '>
+      <span id='up'></span>
       <Row className='container m-auto mt-4 pt-5'>
         <Col lg={8} className=' text-start mt-5 p-4'>
           <h2 style={{color:'#EC8106'}} >About me</h2>

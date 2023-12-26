@@ -7,6 +7,10 @@ const Projects = () => {
     const [ items , setItems ] = useState([]);
     const [loading, setLoading] = useState(true); // اضافه کردن متغیر loading
 
+    useEffect(() => {
+      window.scrollTo(0, 0); // اسکرول به بالای صفحه
+    },[])
+
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
       fetch(`${URL_API}/api/projects`)

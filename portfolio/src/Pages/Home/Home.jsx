@@ -1,10 +1,15 @@
-import React from 'react';
+import { useEffect } from 'react';
 import {Row,Col} from 'react-bootstrap'
 import Header from '../../Components/Header/Header';
 import Items from '../../Components/Articles/items';
 import SkilsComponent from '../../Components/Skils/SkilsComponent';
 // import Carosel from '../../Components/Carosles/Carosel';
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // اسکرول به بالای صفحه
+  },[])
+
   return (
     <div className='container w-100 vh-100 pt-2  pt-lg-5'>
       <Row className='my-5 pt-5'>

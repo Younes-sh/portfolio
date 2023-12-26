@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './style.css';
 import Form from './Form';
 import {Row,Col} from 'react-bootstrap';
@@ -9,6 +10,10 @@ import Location from '../../assets/Contact/location.png';
 import Email from '../../assets/Contact/email.png';
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // اسکرول به بالای صفحه
+  },[])
 
   return (
     <div className='Contact   py-5   pt-5 text-light'>

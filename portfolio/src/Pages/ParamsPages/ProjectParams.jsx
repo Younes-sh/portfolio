@@ -24,7 +24,7 @@ const ProjectParams = () => {
     },[])
 
     useEffect(() => {
-
+        window.scrollTo(0, 0); // اسکرول به بالای صفحه
     },[])
   return (
     <div className='py-5 '>
