@@ -15,6 +15,9 @@ import tailwind from '../../assets/Header/tailwind.png';
 
 import '../../assets/Fonts/fFinish.ttf';
 
+// dependencie Animation
+import { useTrail, animated } from '@react-spring/web';   
+
 const DIV = styled.div`
 width: 350px;
 height: 450px;
@@ -49,12 +52,29 @@ const IMG = styled.img`
 `
 
 const Header = () => {
+    const textItems = ['Y', 'O', 'U', 'N', 'E', 'S', ' ', 'S', 'H', 'E', 'I', 'K', 'H', 'L', 'A', 'R'];
+
+    const trail = useTrail(textItems.length, {
+        from: { opacity: 0, transform: 'translateY(20px)' },
+        to: { opacity: 1, transform: 'translateY(0)' },
+        config: { duration: 200 }, // مدت زمان انیمیشن (میلی‌ثانیه)
+        delay: index => 500 + index * 100, // تاخیر بر اساس ایندکس (میلی‌ثانیه)
+      });
   return (
    <div  className='w-100 h-100 lg-mt-5 pt-lg-5 '>
     <Row className='container   m-auto '>
         <Col lg={6} className='text-align-center pt-lg-5 mt-lg-5'>
-            <h1 className='text-dark text-start Capsmall'>YOUNES SHEIKHLAR</h1>
-            <p className='text-dark text-start h3 mt-5'>I am a Web designer, Full stack developer</p>
+            <h1 className='text-light text-start Capsmall'>
+              {
+                trail.map((animation, index) => (
+                    <animated.span key={index} style={{ ...animation, display: 'inline-block', marginRight: '5px' }}>
+                      {textItems[index]}
+                    </animated.span>
+                  ))
+              }
+            </h1>
+
+            <p className='text-light text-start h3 mt-5'>I am a Web designer, Full stack developer</p>
             <div className='text-start d-flex flex-wrap mt-5'>
                 <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Node.js</span>
                 <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >MongoDB</span>
