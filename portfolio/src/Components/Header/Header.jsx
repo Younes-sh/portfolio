@@ -12,11 +12,34 @@ import mongoDB from '../../assets/Header/mongoDB.png';
 import nodejs from '../../assets/Header/Node.png';
 import react from '../../assets/Header/React.png';
 import tailwind from '../../assets/Header/tailwind.png';
+import Redux from '../../assets/Header/Redux.png';
+import Next from '../../assets/Header/Next.png';
+import JavaScript from '../../assets/Header/JavaScript.png';
+import Sass from '../../assets/Header/Sass.png';
+import ReactNative from '../../assets/Header/React-native.png';
+import Express from '../../assets/Header/Express.png';
+import AWS from '../../assets/Header/AWS.png';
+import TypeScript from '../../assets/Header/TypeScript.png';
+import Json from '../../assets/Header/Json.png';
+import Figma from '../../assets/Header/Figma.png';
+import RestApi from '../../assets/Header/RestApi.png';
+import WebPack from '../../assets/Header/webpack.png';
+import python from '../../assets/Header/python.png';
+import mySql from '../../assets/Header/mysql.png';
+import windows from '../../assets/Header/windows.png';
+import Android from '../../assets/Header/Android.png';
+import Apple from '../../assets/Header/apple.png';
+import Electron from '../../assets/Header/Electron.png';
+
+
+
 
 import '../../assets/Fonts/fFinish.ttf';
 
 // dependencie Animation
 import { useTrail, animated } from '@react-spring/web';   
+//  "react-fast-marquee";
+import Marquee from "react-fast-marquee";
 
 const DIV = styled.div`
 width: 350px;
@@ -74,6 +97,8 @@ const Header = () => {
               }
             </h1>
 
+           
+
             <p className='text-light text-start h3 mt-5'>I am a Web designer, Full stack developer</p>
             <div className='text-start d-flex flex-wrap mt-5'>
                 <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Node.js</span>
@@ -90,13 +115,43 @@ const Header = () => {
                 <span className='px-3 text-light' style={{backgroundColor:'#EC8106', margin:'5px',borderRadius:'5px'}} >Adobe illustrator</span>
             </div>
         </Col>
+        
         <Col lg={6} className='text-start pt-3 '>
             <DIV className='w-100'>
-                <IMG  src={Younes} alt="younes" />
+                <IMG  src={Younes} alt="younes" style={{zIndex:2}}/>
             </DIV>
         </Col>
+        
     </Row>
-    
+        <Marquee style={{zIndex:1}}>
+            <img src={bootstrap} style={{width:'50px', margin:'0 10px', zIndex:1}} />
+            <img src={docker} style={{width:'50px', margin:'0 10px'}} />
+            <img src={git} style={{width:'50px', margin:'0 10px'}} />
+            <img src={github} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Linux} style={{width:'50px', margin:'0 10px'}} />
+            <img src={mongoDB} style={{width:'50px', margin:'0 10px'}} />
+            <img src={nodejs} style={{width:'50px', margin:'0 10px'}} />
+            <img src={react} style={{width:'50px', margin:'0 10px'}} />
+            <img src={tailwind} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Redux} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Next} style={{width:'50px', margin:'0 10px'}} />
+            <img src={JavaScript} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Sass} style={{width:'50px', margin:'0 10px'}} />
+            <img src={ReactNative} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Express} style={{width:'50px', margin:'0 10px'}} />
+            <img src={AWS} style={{width:'50px', margin:'0 10px'}} />
+            <img src={TypeScript} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Json} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Figma} style={{width:'50px', margin:'0 10px'}} />
+            <img src={RestApi} style={{width:'50px', margin:'0 10px'}} />
+            <img src={WebPack} style={{width:'50px', margin:'0 10px'}} />
+            <img src={python} style={{width:'50px', margin:'0 10px'}} />
+            <img src={mySql} style={{width:'50px', margin:'0 10px'}} />
+            <img src={windows} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Android} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Apple} style={{width:'50px', margin:'0 10px'}} />
+            <img src={Electron} style={{width:'50px', margin:'0 10px'}} />
+        </Marquee>
    </div>
   )
 }
