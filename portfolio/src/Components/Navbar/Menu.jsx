@@ -6,8 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import styled from 'styled-components';
 import './style.css'
-import snowflake from '../../assets/Navbar/snowflake.png';
-import PapaNoel from '../../assets/Navbar/papanoel.gif';
 
 const Menu = () => {
   const [expanded, setExpanded] = useState(true);
@@ -40,21 +38,7 @@ const Menu = () => {
   `
   return (
     <DIV>
-      <div class="area" >
-        <ul class="circles">
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-          <li><img src={snowflake} style={{width:'100%'}} alt="" /></li>
-        </ul>
-      </div >
-      <img src={PapaNoel} alt="" style={{width:'60px',marginTop:-20 ,marginLeft:'100px', position:'absolute'}} />
+     
       <Navbar className='navbar ' expand="lg" style={{position:'fixed',marginTop:'-20px',marginLeft:'-200px'}}>
                 
             <Container className='content '>
