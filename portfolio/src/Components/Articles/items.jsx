@@ -1,8 +1,8 @@
 import Card from '../../Components/Cards/Card';
 
 import Image1 from '../../assets/Articls/Custom.png'
-import Image2 from '../../assets/Articls/Defining Web Application.png'
-import Image3 from '../../assets/Articls/Prototyping & Design Testing.png'
+import Image2 from '../../assets/Articls/De.png'
+import Image3 from '../../assets/Articls/Pr.png'
 import Image4 from '../../assets/Articls/Third Party Software Selections.png'
 import Image5 from '../../assets/Articls/Web Application Structure.png'
 
