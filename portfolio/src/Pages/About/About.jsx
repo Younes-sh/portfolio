@@ -11,9 +11,8 @@ const About = () => {
     window.scrollTo(0, 0); // اسکرول به بالای صفحه
   },[])
   return (
-    <div className='w-100  pt-5 About '>
-      <span id='up'></span>
-      <Row className='container m-auto mt-4 pt-5'>
+    <div className='w-100  h-100  pt-5 About '>
+      <Row className='container vh-100 m-auto mt-4 pt-5 text-light'>
         <Col lg={8} className=' text-start mt-5 p-4'>
           <h2 style={{color:'#EC8106'}} >About me</h2>
           I am an organized, determined, and creative person who is eager to work with established or growing companies. I am looking for a position as a front-end developer in a dynamic and innovative company where I can use my skills and experience to achieve growth, success and development by providing strategic solutions to challenges.
