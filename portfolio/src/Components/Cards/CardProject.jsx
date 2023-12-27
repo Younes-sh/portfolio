@@ -19,12 +19,13 @@ const DIV = styled.div`
   width: 400px;
   height: 225px;
   margin: 20px 0;
- 
+  position: relative;
   @media (max-width: 768px) {
     width: 280px;
     height:158px;
     margin: 0 auto;
   }
+  
 `;
 
 const IMG = styled.img `
@@ -32,6 +33,7 @@ const IMG = styled.img `
   margin-top: 100px;
   right:0;
   position:absolute;
+  z-index: 9;
   transform:rotate(30deg);
   @media (max-width: 768px) {
     width: 28px;
@@ -40,9 +42,22 @@ const IMG = styled.img `
   }
 `
 
+const InfoHover = styled.div `
+width: 100%;  
+height: 60%;
+  transition: height 1s ease-out;
+  opacity: 1;
+  bottom: 0;
+  position: absolute;
+
+  @media (max-width: 768px) {
+    height: 88%;
+  }
+`
+
 
   return (
-    <div style={{ position: 'relative' }} >
+    <div style={{ position: 'relative' }}  >
       <IMG  src={props.situation} alt="" />
       <Button
         className='mt-5 pt-5'
@@ -54,22 +69,22 @@ const IMG = styled.img `
           <img style={{width:'100%'}} src={props.UrlImage} alt={props.title} />
 
           {isShown && (
-            <div className='glasmorphism text-start  ' >
+            <InfoHover className='glasmorphism text-start' >
               <h3 className='text-start Capsmall'>{props.title}</h3>
               <span>
                 {props.details}
               </span>
 
               <div className='d-flex justify-content-between pt-2'>
-                <Link to={`/projectparams/${props._id}`} className=' btn btn-info px-4'>
+                <Link to={`/projectparams/${props._id}`} className=' btn btn-info  px-4'>
                   more
                 </Link>
                 {/* <Link to={props.github} className=' btn btn-dark'><img src={GitHub} alt="Github" style={{width:'20px',backgroundColorcolor:'#fff'}} /> Github</Link> */}
-                <Link target='_blank' to={props.directLink} className=' btn btn-success'>
+                <Link target='_blank' to={props.directLink} className=' btn btn-success d-none d-md-block'>
                   View site
                 </Link>
               </div>
-            </div>
+            </InfoHover>
           )}
         </DIV>
       </Button>
