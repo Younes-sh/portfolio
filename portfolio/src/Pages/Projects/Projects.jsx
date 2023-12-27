@@ -29,7 +29,7 @@ const Projects = () => {
               <Spiner  />
             </div>
             ) : (
-              <div className=' d-flex flex-wrap  justify-content-center justify-content-lg-start  m-auto'>
+              <div className='w-100 100-vh d-flex flex-wrap  justify-content-center   m-auto'>
               {
               items.map(item => <CardProject key={item.id} {...item} />)
 
