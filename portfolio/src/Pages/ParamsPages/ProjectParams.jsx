@@ -30,9 +30,9 @@ const ProjectParams = () => {
     <div className='py-5 '>
         <Row className='container m-auto mt-5 pt-5 '>
             <Col lg={4} className=' text-start order-2 order-lg-1 mt-4 mt-lg-0'>
-                <h3 className='pt-5'><span className='text-secondary'>Project:</span> {item.title}</h3>
-                <h5 className='mt-3'><span className='text-secondary'>Technology:</span> {item.details}</h5>
-                <p style={{textAlign:'justify'}} className='mt-5'>
+                <h3 className='pt-5 text-light'><span>Project:</span> {item.title}</h3>
+                <h5 className='mt-3 text-light'><span>Technology:</span> {item.details}</h5>
+                <p style={{textAlign:'justify', color:'#ccc'}} className='mt-5'>
                     {item.description}
                 </p>
 
