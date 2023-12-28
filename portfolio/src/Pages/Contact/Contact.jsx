@@ -21,22 +21,22 @@ const Contact = () => {
         <Row className='w-100 d-lg-flex flex-wrap  justify-content-center  text-start'>
           <Col lg={4}  className='d-flex flex-lg-column  align-items-center w-sm-100  w-lg-25 ' >
             <div className='d-flex flex-column justify-content-sm-around  align-items-center align-items-lg-start mx-auto   containerContact'>
-            <h5 className='text-dark'>CONTACT INFO</h5>
+            <h5 className=''>CONTACT INFO</h5>
               <div className='m-auto  '>
                 <div >
                   <img className='' src={Email} alt="email" />
-                  <span style={{width:'100px'}}> <a style={{textDecoration:'none', color:'#fff', width:'100%'}} href="mailto:sheikhlaryounes@gmail.com" className='text-dark'> sheikhlaryounes@gmail.com</a></span>
+                  <span style={{width:'100px'}}> <a style={{textDecoration:'none', color:'#fff', width:'100%'}} href="mailto:sheikhlaryounes@gmail.com" className=''> sheikhlaryounes@gmail.com</a></span>
                 </div>
 
                 <div className=' '>
                   <img className='' style={{color:'#ccc'}} src={Location} alt="Location" />
-                  <span  className='text-dark'> Belgium, Brussels</span>
+                  <span  className=''> Belgium, Brussels</span>
                 </div>
               </div>
 
 
               <div className='mt-5 pt-5 text-start '>
-                <h5 className='text-dark'>SOCIAL INFO</h5>
+                <h5 className=''>SOCIAL INFO</h5>
                 <a  className='' target='_blank' href="https://github.com/Younes-sh"><img src={Github} alt='github'></img></a>
                 <a  className='mx-2' target='_blank' href="https://dribbble.com/younessh"><img src={Diribbble} alt='github'></img></a>
                 <a  className='' target='_blank' href="https://www.linkedin.com/in/younes-sheikhlar/"><img src={Linkedin} alt='Linkedin'></img></a>
