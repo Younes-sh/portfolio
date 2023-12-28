@@ -2,10 +2,7 @@ import React from 'react';
 import styled  from 'styled-components';
 import './main.css'
 
-const Div = styled.div`
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 35%);
-`
+
 
 const Main = () => {
   return (

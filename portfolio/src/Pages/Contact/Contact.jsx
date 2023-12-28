@@ -16,8 +16,8 @@ const Contact = () => {
   },[])
 
   return (
-    <div className='Contact   py-5   pt-5 text-light'>
-      <div className='container h-100   d-flex   mt-5 pt-5'>
+    <div className='  py-5   pt-5 text-light'>
+      <div className=' container-sm h-100   d-flex   mt-5 pt-5'>
         <Row className='w-100 d-lg-flex flex-wrap  justify-content-center  text-start'>
           <Col lg={4}  className='d-flex flex-lg-column  align-items-center w-sm-100  w-lg-25 ' >
             <div className='d-flex flex-column justify-content-sm-around  align-items-center align-items-lg-start mx-auto   containerContact'>
