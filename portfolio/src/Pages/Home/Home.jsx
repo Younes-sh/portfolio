@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import {Row,Col} from 'react-bootstrap'
-import Header from '../../Components/Header/Header';
+import Header from '../../Components/Home/Header/Header';
 import Items from '../../Components/Articles/items';
-import SkilsComponent from '../../Components/Skils/SkilsComponent';
 // import Carosel from '../../Components/Carosles/Carosel';
+import MainOne from '../../Components/Home/Main/MainOne';
 const Home = () => {
 
   useEffect(() => {
@@ -11,14 +11,14 @@ const Home = () => {
   },[])
 
   return (
-    <div className=' w-100 vh-100 pt-2  pt-lg-5'>
+    <div className=' w-100  pt-2  pt-lg-5'>
       <Row className='my-5 pt-5'>
         <Col>
           <Header />
         </Col>
       </Row>
       {/* Main */}
-      <Row className='my-lg-5 py-5'>
+      <Row className='py-5'>
         <Col>
           <Items />
         </Col>
@@ -26,9 +26,9 @@ const Home = () => {
      
       <br />
 
-      <Row className='my-lg-5 py-5 '>
+      <Row className=' py-5 '>
         <Col>
-          {/* <Learning /> */}
+          <MainOne />
         </Col>
       </Row>
 
