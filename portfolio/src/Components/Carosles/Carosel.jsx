@@ -7,9 +7,6 @@ function Carosel() {
 
   const API_URL = process.env.REACT_APP_URL_API;
 
-
- 
-
   useEffect(() => {
     fetch(`${API_URL}/api/projects/`)
     .then(res => res.json())
@@ -17,8 +14,6 @@ function Carosel() {
      
   }, []);
   
-  
-
   return (
     <div className="Carosel container ">
       <Carousel className='w-75 m-auto'>
