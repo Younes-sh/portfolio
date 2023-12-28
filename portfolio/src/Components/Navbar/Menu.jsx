@@ -10,10 +10,6 @@ import './style.css'
 const Menu = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleSelect = () => {
-    setExpanded(false); // Close the Navbar when a Nav item is selected
-  };
-
   const DIV = styled.div`
     .ContentMenu{
       @media screen and (max-width: 992px) {
@@ -48,11 +44,11 @@ const Menu = () => {
           />
                 <Navbar.Collapse id="basic-navbar-nav" className='w-100  ContentMenu' >
                   <Nav className="me-auto " onClick={() => setExpanded(expanded ? false : 'expanded')}>
-                  <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/' ><span className='fancy'>Home</span></NavLink>
-                  <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/projects' ><span className='fancy'>Projects</span></NavLink>
-                  <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/about' ><span className='fancy'>About</span></NavLink>
-                  <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/contact' ><span className='fancy'>Contact</span></NavLink>
-                </Nav>
+                    <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/' ><span className='fancy'>Home</span></NavLink>
+                    <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/projects' ><span className='fancy'>Projects</span></NavLink>
+                    <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/about' ><span className='fancy'>About</span></NavLink>
+                    <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/contact' ><span className='fancy'>Contact</span></NavLink>
+                  </Nav>
             </Navbar.Collapse>
           </Container>
       </Navbar>
