@@ -4,6 +4,8 @@ import Header from '../../Components/Home/Header/Header';
 import Items from '../../Components/Articles/items';
 // import Carosel from '../../Components/Carosles/Carosel';
 import MainOne from '../../Components/Home/Main/MainOne';
+import MainTwo from '../../Components/Home/Main/MainTwo';
+
 const Home = () => {
 
   useEffect(() => {
@@ -29,6 +31,12 @@ const Home = () => {
       <Row className=' py-5 '>
         <Col>
           <MainOne />
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+          <MainTwo />
         </Col>
       </Row>
 

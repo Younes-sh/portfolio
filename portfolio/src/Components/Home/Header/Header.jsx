@@ -40,15 +40,9 @@ import '../../../assets/Fonts/fFinish.ttf';
 import { useTrail, animated } from '@react-spring/web';   
 //  "react-fast-marquee";
 import Marquee from "react-fast-marquee";
+import { Rotate } from 'react-reveal';
 
-const DIV = styled.div`
-width: 350px;
-height: 450px;
-  @media screen and (max-width: 720px) {
-    
-}
-  
-`
+
 
 const IMG = styled.img`
     width: 90%;
@@ -69,6 +63,7 @@ const IMG = styled.img`
         margin:50px -60px;
     }
 `
+
 
 const Header = () => {
     const textItems = ['Y', 'O', 'U', 'N', 'E', 'S', ' ', 'S', 'H', 'E', 'I', 'K', 'H', 'L', 'A', 'R'];
@@ -112,10 +107,15 @@ const Header = () => {
             </div>
         </Col>
         
-        <Col lg={6} className='text-start pt-3 '>
-            <DIV className='w-100'>
+        <Col lg={6} className='text-start pt-3 position-relative d-flex justify-content-center'>
+       
+            
+            <div className=''>
+                <div></div>
                 <IMG  src={Younes} alt="younes" style={{zIndex:2}}/>
-            </DIV>
+                
+            </div>
+            
         </Col>
         
     </Row>

@@ -2,7 +2,9 @@ import React from 'react'
 
 const MainTwo = () => {
   return (
-    <div>MainTwo</div>
+    <div>
+      <h1>MainTwo</h1>
+    </div>
   )
 }
 
