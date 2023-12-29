@@ -31,15 +31,20 @@
     -webkit-animation: scroll-reveal linear forwards;
     animation: scroll-reveal linear forwards;
     animation-timeline: view();
+    -webkit-animation-timeline: view();
 }
 
 .scroll-reveal h2  {
     animation-range-start: contain 20vh;
+    -webkit-animation-range-start: contain 20vh;
     animation-range-end: contain 50vh;
+    -webkit-animation-range-end: contain 50vh;
 }
 .scroll-reveal p  {
     animation-range-start: contain 50vh;
     animation-range-end: contain 70vh;
+    -webkit-animation-range-start: contain 50vh;
+    -webkit-animation-range-end: contain 70vh;    
 }
 
 
