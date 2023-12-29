@@ -26,7 +26,7 @@
     background-clip: text;
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    background-image:   linear-gradient(90deg, rgb(255, 0, 0) 16%, rgba(194,183,13,1) 85%);
+    background-image:   linear-gradient(90deg, rgba(255, 0, 0, 0.39) 16%, rgba(194,183,13,1) 85%);
     /* background-image: url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
     -webkit-animation: scroll-reveal linear forwards;
     animation: scroll-reveal linear forwards;
