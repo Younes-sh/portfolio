@@ -5,7 +5,7 @@ import Items from '../../Components/Articles/items';
 // import Carosel from '../../Components/Carosles/Carosel';
 import MainOne from '../../Components/Home/Main/MainOne';
 import MainTwo from '../../Components/Home/Main/MainTwo';
-import AnimationHeader from '../../Components/Home/Header/AnimationHeader';
+
 
 const Home = () => {
 
@@ -38,7 +38,6 @@ const Home = () => {
       <Row>
         <Col>
           <MainTwo />
-          <AnimationHeader />
         </Col>
       </Row>
 
