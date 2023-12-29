@@ -1,6 +1,7 @@
-import React from 'react'
+import {useState} from 'react';
 import styled from 'styled-components';
 import {Row,Col} from 'react-bootstrap';
+import './style.css';
 
 import Younes from '../../../assets/Home/younes.png';
 import Crystal from '../../../assets/Home/png.png';
@@ -68,23 +69,30 @@ const IMG = styled.img`
 
 
 const Header = () => {
+    const [ change, setChange] = useState(false);
     const textItems = ['Y', 'O', 'U', 'N', 'E', 'S', ' ', 'S', 'H', 'E', 'I', 'K', 'H', 'L', 'A', 'R'];
 
     const changeImage = () => {
-
+        setChange(true)
+    }
+    const reChange = () => {
+        setChange(false)
     }
     const trail = useTrail(textItems.length, {
         from: { opacity: 0, transform: 'translateY(20px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { duration: 200 }, // مدت زمان انیمیشن (میلی‌ثانیه)
         delay: index => 500 + index * 100, // تاخیر بر اساس ایندکس (میلی‌ثانیه)
-      });
+    });
+
+  
+
   return (
    <div  className='w-100 h-100 lg-mt-5 pt-lg-5 '>
     <AnimationHeader/>
     <Row className='container   m-auto '>
         <Col lg={6} className='text-align-center pt-lg-5 mt-lg-5'>
-            <h1 className='text-light text-start Capsmall mt-5'>
+            <h1  className='text-light text-start Capsmall mt-5'>
               {
                 trail.map((animation, index) => (
                     <animated.span key={index} style={{ ...animation, display: 'inline-block', marginRight: '5px' }}>
@@ -113,17 +121,24 @@ const Header = () => {
             </div>
         </Col>
         
-        <Col lg={6} className='text-start pt-3 position-relative d-flex justify-content-center'>
+        <Col lg={6} className='text-start pt-3 position-relative d-flex justify-content-end'>
        
             
             <div className=''>
-                <div></div>
-                <IMG  src={goldYounes} alt="younes" style={{zIndex:2}}/>
-                {/* <IMG  src={Younes} alt="younes" style={{zIndex:2}}/> */}
-
+            <IMG  src={goldYounes} alt="younes" style={{zIndex:2}}/>
                 <button
                     onMouseEnter={changeImage}
+                    onMouseLeave={reChange}
+                    style={{
+                        border:'none',
+                        background:'transparent'
+                    }}  
                 >
+                    {
+                        // change? <IMG  src={Younes} alt="younes" style={{zIndex:2}}/> : <IMG  src={goldYounes} alt="younes" style={{zIndex:2}}/>
+                    }
+                
+                 
 
                 </button>
                 
