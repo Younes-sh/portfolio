@@ -31,7 +31,7 @@ import Android from '../../../assets/Header/Android.png';
 import Apple from '../../../assets/Header/apple.png';
 import Electron from '../../../assets/Header/Electron.png';
 
-
+import AnimationHeader from './AnimationHeader';
 
 
 import '../../../assets/Fonts/fFinish.ttf';
@@ -76,6 +76,7 @@ const Header = () => {
       });
   return (
    <div  className='w-100 h-100 lg-mt-5 pt-lg-5 '>
+    <AnimationHeader/>
     <Row className='container   m-auto '>
         <Col lg={6} className='text-align-center pt-lg-5 mt-lg-5'>
             <h1 className='text-light text-start Capsmall'>
