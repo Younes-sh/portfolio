@@ -41,7 +41,6 @@ const Home = () => {
       </Row>
 
       <br />
-      
     </div>
   )
 }

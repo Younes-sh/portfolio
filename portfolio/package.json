@@ -30,6 +30,7 @@
     "react-three-fiber": "^6.0.13",
     "styled-components": "^6.0.8",
     "three": "^0.157.0",
+    "tsparticles": "^3.0.3",
     "typescript": "^5.2.2",
     "web-vitals": "^2.1.0"
   },
