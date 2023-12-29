@@ -3,7 +3,7 @@
 } */
 
 .scroll-reveal h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1;
     font-weight: 900;
 }
@@ -26,7 +26,7 @@
     background-clip: text;
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    background-image:   linear-gradient(90deg, rgba(150,18,179,1) 16%, rgba(194,183,13,1) 85%);
+    background-image:   linear-gradient(90deg, rgb(255, 0, 0) 16%, rgba(194,183,13,1) 85%);
     /* background-image: url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
     -webkit-animation: scroll-reveal linear forwards;
     animation: scroll-reveal linear forwards;
@@ -36,15 +36,11 @@
 
 .scroll-reveal h2  {
     animation-range-start: contain 20vh;
-    -webkit-animation-range-start: contain 20vh;
     animation-range-end: contain 50vh;
-    -webkit-animation-range-end: contain 50vh;
 }
 .scroll-reveal p  {
     animation-range-start: contain 50vh;
     animation-range-end: contain 70vh;
-    -webkit-animation-range-start: contain 50vh;
-    -webkit-animation-range-end: contain 70vh;    
 }
 
 
