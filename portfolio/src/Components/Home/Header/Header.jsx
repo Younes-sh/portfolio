@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {Row,Col} from 'react-bootstrap';
 
 import Younes from '../../../assets/Home/younes.png';
+import Crystal from '../../../assets/Home/png.png';
+import goldYounes from '../../../assets/Home/goldYounes.png';
 import bootstrap from '../../../assets/Header/bootstrap.png';
 import docker from '../../../assets/Header/docker.png';
 import git from '../../../assets/Header/git.png';
@@ -45,7 +47,7 @@ import { Rotate } from 'react-reveal';
 
 
 const IMG = styled.img`
-    width: 90%;
+    width: 70%;
     clip-path: polygon(49% 0, 100% 0, 100% 35%, 95% 66%, 90% 84%, 66% 100%, 37% 100%, 12% 90%, 0 48%, 0 0);
     @media screen and (max-width: 980px) {
         margin-top:50px;
@@ -68,6 +70,9 @@ const IMG = styled.img`
 const Header = () => {
     const textItems = ['Y', 'O', 'U', 'N', 'E', 'S', ' ', 'S', 'H', 'E', 'I', 'K', 'H', 'L', 'A', 'R'];
 
+    const changeImage = () => {
+
+    }
     const trail = useTrail(textItems.length, {
         from: { opacity: 0, transform: 'translateY(20px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
@@ -79,7 +84,7 @@ const Header = () => {
     <AnimationHeader/>
     <Row className='container   m-auto '>
         <Col lg={6} className='text-align-center pt-lg-5 mt-lg-5'>
-            <h1 className='text-light text-start Capsmall'>
+            <h1 className='text-light text-start Capsmall mt-5'>
               {
                 trail.map((animation, index) => (
                     <animated.span key={index} style={{ ...animation, display: 'inline-block', marginRight: '5px' }}>
@@ -113,7 +118,14 @@ const Header = () => {
             
             <div className=''>
                 <div></div>
-                <IMG  src={Younes} alt="younes" style={{zIndex:2}}/>
+                <IMG  src={goldYounes} alt="younes" style={{zIndex:2}}/>
+                {/* <IMG  src={Younes} alt="younes" style={{zIndex:2}}/> */}
+
+                <button
+                    onMouseEnter={changeImage}
+                >
+
+                </button>
                 
             </div>
             
