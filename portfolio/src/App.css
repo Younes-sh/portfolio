@@ -1,11 +1,31 @@
+/* CSS برای کامپوننت App */
 .App {
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,6,1) 35%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(6, 6, 6, 1) 35%
+  );
 }
 
+/* مثال CSS برای انیمیشن */
+.fade-enter {
+  opacity: 0;
+}
 
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
 
+.fade-exit {
+  opacity: 1;
+}
 
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

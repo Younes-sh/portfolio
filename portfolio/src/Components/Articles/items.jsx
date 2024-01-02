@@ -7,10 +7,10 @@ import Image4 from '../../assets/Articls/Third Party Software Selections.png'
 import Image5 from '../../assets/Articls/Web Application Structure.png'
 
 const Title1 = "Custom Web App Integration";
-const Title2 = "Defining Web Application";
-const Title3 = "Web Application Structure";
+const Title2 = "Web Design";
+const Title3 = "Maintenance";
 const Title4 = "Research & UX Workflow";
-const Title5 = "Third-Party Software Selections";
+const Title5 = "Security";
 
 const Text1 = "I integrate disparate systems and business processes, add web service functionality to your existing applications, and synchronize data across those applications.";
 const Text2 = "Whether you require a Web Development Solution developed from scratch, or a third-party integration to add to your existing app, I can get the job done quickly, effectively, and affordably.";

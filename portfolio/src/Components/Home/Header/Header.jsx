@@ -49,7 +49,7 @@ import { Rotate } from 'react-reveal';
 
 const IMG = styled.img`
     width: 70%;
-    clip-path: polygon(49% 0, 100% 0, 100% 35%, 95% 66%, 90% 84%, 66% 100%, 37% 100%, 12% 90%, 0 48%, 0 0);
+    // clip-path: polygon(49% 0, 100% 0, 100% 35%, 95% 66%, 90% 84%, 66% 100%, 37% 100%, 12% 90%, 0 48%, 0 0);
     @media screen and (max-width: 980px) {
         margin-top:50px;
     }
