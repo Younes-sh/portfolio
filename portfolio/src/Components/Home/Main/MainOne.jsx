@@ -9,23 +9,26 @@ import ChangeItem from './ChangeItem';
 
 const Main = () => {
   return (
-    <div className='container 100-vh my-5 mx-auto py-5 d-flex flex-column justify-content-center align-items-center '>
-      <section className='scroll-reveal d-flex flex-column justify-content-center align-items-center'
-        animate={{ backgroundSize: '100% 100%' }}
-        transition={{ duration: 1 }}
-      >
-        <h2 className=''>
-         A Stunning Outlook on Front-End World
-        </h2>
-        <p className='mt-5' style={{maxWidth:'600px'}}>
-          
-          <span>
-            As a front-end enthusiast, I take pride in sharing my digital creations a fusion of beauty and functionality that elevates user experience to new heights. My aim here is to present a credible and innovative perspective on the digital realm. I'm thrilled to have you accompany me on this journey.
-          </span>
-        </p>
-      </section>
+    <div>
+      <div className='container 100-vh my-5 mx-auto py-5 d-flex flex-column justify-content-center align-items-center'>
+        <section className='scroll-reveal d-flex flex-column justify-content-center align-items-center'
+          animate={{ backgroundSize: '100% 100%' }}
+          transition={{ duration: 1 }}
+        >
+          <h2 className=''>
+           A Stunning Outlook on Front-End World
+          </h2>
+          <p className='mt-5' style={{maxWidth:'600px'}}>
 
-      <Row className='w-100  mt-5  pt-5  align-items-center'>
+            <span>
+              As a front-end enthusiast, I take pride in sharing my digital creations a fusion of beauty and functionality that elevates user experience to new heights. My aim here is to present a credible and innovative perspective on the digital realm. I'm thrilled to have you accompany me on this journey.
+            </span>
+          </p>
+        </section>
+
+       
+      </div>
+      <Row className='w-100    '>
         <ChangeItem />
       </Row>
     </div>
