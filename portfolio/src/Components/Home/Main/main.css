@@ -49,3 +49,12 @@
         background-size: 100% 100%;
     }
 }
+
+
+/* Changeitem component */
+
+.Hover {
+    opacity: 100;
+    transition: 0.5s;
+    height: 360px;
+}
