@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import {Row,Col} from 'react-bootstrap';
 import './style.css';
 
+
 import Younes from '../../../assets/Home/younes.png';
 import Crystal from '../../../assets/Home/png.png';
 import goldYounes from '../../../assets/Home/goldYounes.png';
+import ManGranit from '../../../assets/Home/ManGranit.png';
 import bootstrap from '../../../assets/Header/bootstrap.png';
 import docker from '../../../assets/Header/docker.png';
 import git from '../../../assets/Header/git.png';
@@ -85,7 +87,7 @@ const Header = () => {
         delay: index => 500 + index * 100, // تاخیر بر اساس ایندکس (میلی‌ثانیه)
     });
 
-  
+   
 
   return (
    <div  className='w-100 h-100 lg-mt-5 pt-lg-5 '>
