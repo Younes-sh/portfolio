@@ -1,9 +1,9 @@
 import {useState} from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+import Logo from '../../assets/LogoPortfolio.png';
 import styled from 'styled-components';
 import './style.css'
 
@@ -28,15 +28,17 @@ const Menu = () => {
     }
     .navbar .active {
       color:#403920;
-      
+      border-bottom: 3px solid #3c3c3c;
+      font-weight:bold;
     }
   
   `
   return (
     <DIV>
      
-      <Navbar className='navbar ' expand="lg" style={{position:'fixed',marginTop:'-20px',marginLeft:'-200px'}}>
-                
+      <Navbar className='navbar ' expand="lg" style={{display:'flex' , justifyContent: 'space-between'}}>
+            
+            {/* <Link className='px-1 ' style={{textDecoration:'none'}} to='/' ><img style={{width:'70px'}} src={Logo} /></Link> */}
             <Container className='content '>
               <Navbar.Toggle
             aria-controls="basic-navbar-nav "
@@ -51,6 +53,7 @@ const Menu = () => {
                   </Nav>
             </Navbar.Collapse>
           </Container>
+          
       </Navbar>
     </DIV>
     )

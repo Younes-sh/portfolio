@@ -94,10 +94,11 @@ const Header = () => {
     <AnimationHeader/>
     <Row className='container   m-auto '>
         <Col lg={6} className='text-align-center pt-lg-5 mt-lg-5'>
+            {/* Capsmall className is a font-family */}
             <h1  className='text-light text-start Capsmall mt-5'>
               {
                 trail.map((animation, index) => (
-                    <animated.span key={index} style={{ ...animation, display: 'inline-block', marginRight: '5px' }}>
+                    <animated.span key={index} style={{ ...animation, display: 'inline-block'}}>
                       {textItems[index]}
                     </animated.span>
                   ))
@@ -123,7 +124,7 @@ const Header = () => {
             </div>
         </Col>
         
-        <Col lg={6} className='text-start pt-3 position-relative d-flex justify-content-end'>
+        <Col lg={6} className='text-start pt-3 position-relative d-flex justify-content-center justify-content-lg-end'>
        
             
             <div className=''>

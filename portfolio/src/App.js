@@ -8,20 +8,20 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 function App(location) {
   return (
     <div className="App" >
-      <TransitionGroup>
-          <CSSTransition
-            key={location.key}
+      {/* <TransitionGroup> */}
+          {/* <CSSTransition */}
+            {/* key={location.key}
             classNames="fade"
             timeout={300}
-          >
+          > */}
       <BrowserRouter>
         <Navbar />
         <div className=''>
           <Routing />
         </div>
       </BrowserRouter>
-      </CSSTransition>
-        </TransitionGroup>
+      {/* </CSSTransition> */}
+        {/* </TransitionGroup> */}
       <Footer />
     </div>
   );
