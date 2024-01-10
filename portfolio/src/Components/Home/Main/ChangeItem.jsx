@@ -25,6 +25,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background:#EC8106;
+
+  
 `
 // DivButton is a button for hover animation text on the image
 const DivButton = styled.button`
