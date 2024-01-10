@@ -10,7 +10,7 @@ import ChangeItem from './ChangeItem';
 const Main = () => {
   return (
     <div>
-      <div className='container 100-vh my-5 mx-auto py-5 d-flex flex-column justify-content-center align-items-center'>
+      <div className='container 100-vh my-5 mx-auto py-5 d-flex flex-column justify-content-center align-items-center m-auto'>
         <section className='scroll-reveal d-flex flex-column justify-content-center align-items-center'
           animate={{ backgroundSize: '100% 100%' }}
           transition={{ duration: 1 }}
@@ -28,7 +28,7 @@ const Main = () => {
 
        
       </div>
-      <Row className='w-100     '>
+      <Row>
         <ChangeItem />
       </Row>
     </div>

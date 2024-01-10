@@ -14,7 +14,7 @@ const Home = () => {
   },[])
 
   return (
-    <div className=' w-100  pt-2  pt-lg-5'>
+    <div className='pt-2  pt-lg-5'>
       <Row className='my-5 pt-5'>
         <Col>
           <Header />
