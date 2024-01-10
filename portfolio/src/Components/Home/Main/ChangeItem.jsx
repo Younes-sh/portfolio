@@ -20,19 +20,23 @@ const Description4 = 'This style emphasizes fonts, sizes, and text colors to mak
 
 const Container = styled.div`
   height: 100vh;
-  padding: 70px ;
   display: flex;
   justify-content: center;
   align-items: center;
   background:#EC8106;
+  z-index: 3;
 
-  
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    padding: 100px 0;
+  }
+
 `
 // DivButton is a button for hover animation text on the image
 const DivButton = styled.button`
   width: 300px;
   height: 600px;
-  padding-top: 250px;
+  // padding-top: 250px;
   border-radius: 200px;
   overflow: hidden;
   position: relative;
@@ -134,7 +138,7 @@ const [defaultImage, setDefaultImage] = useState('');
 
   return (
     <Container>
-        <Row className='text-light container'>
+        <Row className='text-light container '>
             <Col lg={6}>
                 <DivButton
                   style={{backgroundImage:`url(${changeImage})`}}
