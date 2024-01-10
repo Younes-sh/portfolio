@@ -44,11 +44,13 @@ const DivButton = styled.button`
   background-position: center;
 `
 const Paragraph = styled.p`
-  padding: 0 20px;
+  height: auto;
+  padding: 0 20px 5px;
   color: #fff;
   text-align: center;
   border-radius: 0 0 55px 55px;
   text-shadow: 0 0 4px black;
+  overflow:auto;
 `
 const ContainerText = styled.div`
   width: 100%;
@@ -60,7 +62,7 @@ const ContainerText = styled.div`
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 100% 0% 0% 25% / 56% 0% 25% 0%;
+  border-radius: 100% 0% 0% 25% / 56% 0% 25% 50%;
 `
 // ButtonChangeImage
 const ButtonChangeImage = styled.button`

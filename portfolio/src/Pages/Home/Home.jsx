@@ -16,29 +16,29 @@ const Home = () => {
   return (
     <div className='pt-2  pt-lg-5'>
       <Row className='my-5 pt-5'>
-        <Col>
+        {/* <Col> */}
           <Header />
-        </Col>
+        {/* </Col> */}
       </Row>
       {/* Main */}
       <Row className='py-5'>
-        <Col>
+        {/* <Col> */}
           <Items />
-        </Col>
+        {/* </Col> */}
       </Row>
      
       <br />
 
       <Row className=' py-5 '>
-        <Col>
+        {/* <Col> */}
           <MainOne />
-        </Col>
+        {/* </Col> */}
       </Row>
 
       <Row>
-        <Col>
+        {/* <Col> */}
           <MainTwo />
-        </Col>
+        {/* </Col> */}
       </Row>
 
       <br />

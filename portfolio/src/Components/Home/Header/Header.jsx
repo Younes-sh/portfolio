@@ -51,7 +51,7 @@ import { Rotate } from 'react-reveal';
 
 const IMG = styled.img`
     width: 70%;
-    // clip-path: polygon(49% 0, 100% 0, 100% 35%, 95% 66%, 90% 84%, 66% 100%, 37% 100%, 12% 90%, 0 48%, 0 0);
+    clip-path: polygon(49% 0, 100% 0, 100% 35%, 95% 66%, 90% 84%, 66% 100%, 37% 100%, 12% 90%, 0 48%, 0 0);
     @media screen and (max-width: 980px) {
         margin-top:50px;
     }
@@ -72,7 +72,7 @@ const IMG = styled.img`
 
 const Header = () => {
     const [ change, setChange] = useState(false);
-    const textItems = ['Y', 'O', 'U', 'N', 'E', 'S', ' ', 'S', 'H', 'E', 'I', 'K', 'H', 'L', 'A', 'R'];
+    const textItems = ['Y', 'O', 'U', 'N', 'E', 'S', '.', 'S', 'H', 'E', 'I', 'K', 'H', 'L', 'A', 'R'];
 
     const changeImage = () => {
         setChange(true)
@@ -90,7 +90,7 @@ const Header = () => {
    
 
   return (
-   <div  className='w-100 h-100 lg-mt-5 pt-lg-5 '>
+   <div  className='h-100 lg-mt-5 pt-lg-5 '>
     <AnimationHeader/>
     <Row className='container   m-auto '>
         <Col lg={6} className='text-align-center pt-lg-5 mt-lg-5'>
@@ -127,7 +127,7 @@ const Header = () => {
        
             
             <div className=''>
-            <IMG  src={goldYounes} alt="younes" style={{zIndex:2}}/>
+            <IMG  src={goldYounes} alt="programer" style={{zIndex:2}}/>
                 <button
                     onMouseEnter={changeImage}
                     onMouseLeave={reChange}
