@@ -28,7 +28,7 @@ const Main = () => {
 
        
       </div>
-      <Row className='w-100    '>
+      <Row className='w-100     '>
         <ChangeItem />
       </Row>
     </div>
