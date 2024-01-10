@@ -15,29 +15,21 @@ const Home = () => {
   return (
     <div className=' w-100  pt-2  pt-lg-5'>
       <Row className='my-5 pt-5 m-auto'>
-        <Col lg={12}>
           <Header />
-        </Col>
       </Row>
       {/* Main */}
       <Row className='py-5'>
-        <Col lg={12}>
           <Items />
-        </Col>
       </Row>
      
       <br />
 
       <Row className=' py-5 '>
-        <Col lg={12}>
           <MainOne />
-        </Col>
       </Row>
 
       <Row>
-        <Col lg={12}>
           <MainTwo />
-        </Col>
       </Row>
 
       <br />

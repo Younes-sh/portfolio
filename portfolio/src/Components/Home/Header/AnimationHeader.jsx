@@ -100,15 +100,18 @@ const AnimationHeader = () => {
 
   if (init) {
     return (
-      <Particles
+      <div className="">
+        <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        style={{width:'100%'}}
       />
+      </div>
     );
   }
 
-  return <></>;
+  // return <></>;
 };
 
 export default AnimationHeader;
