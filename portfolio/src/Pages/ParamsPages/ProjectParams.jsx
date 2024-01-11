@@ -4,6 +4,7 @@ import { Row , Col} from 'react-bootstrap';
 import styled from 'styled-components';
 
 const GitHub = 'https://cdn4.iconfinder.com/data/icons/bettericons/354/github-512.png'
+const Local_API = 'http://localhost:5000/api/projects/'
 
 const ProjectParams = () => {
     const [ item , setItem] = useState([]);
@@ -17,7 +18,7 @@ const ProjectParams = () => {
 
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
-        fetch(`${URL_API}/api/projects/${itemID}`)
+        fetch(`${URL_API}/api/projects/${itemID}` && `${Local_API}/${itemID}`)
         .then(res => res.json())
         .then(res => setItem(res.data))
         .catch(error => console.log(error))
