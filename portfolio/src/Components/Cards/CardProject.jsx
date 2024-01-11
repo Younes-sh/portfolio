@@ -8,8 +8,7 @@ const CardProject = (props) => {
   const [ paddingAnimation, setPaddingAnimation] = useState(0);
   // this UseStast  is visible content of InfoHover
   const [ visible, setVisible] = useState('hidden');
-
-
+  // 
 const Button = styled.button`
   margin: 0 15px;
   @media (max-width: 768px) {
@@ -104,9 +103,15 @@ const leaveHandler = () => {
                 <Link to={`/projectparams/${props._id}`} style={{visibility:`${visible}`}}  className='btn btn-info  px-4'>
                   more
                 </Link>
-                <Link target='_blank' to={props.directLink} style={{visibility:`${visible}`}} className='btn btn-success'>
-                  View site
-                </Link>
+                {/* ------------- */}
+
+               
+                    <Link target='_blank'to={props.directLink}
+                      style={{visibility:`${visible}`}} className='btn btn-success'>
+                      View site
+                    </Link>
+                
+                
               </LinkInfoBtn>
             </InfoHover>
             )}
