@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import {Row,Col} from 'react-bootstrap';
 import styled from 'styled-components';
 const ImageOne = 'https://i.pinimg.com/564x/d6/f5/af/d6f5afacf625ea70d6a51030399a8278.jpg';
@@ -104,7 +104,6 @@ const [defaultImage, setDefaultImage] = useState('');
   const hoverHandlerIn =() => {
     setVisible('visible'); //
     setChangeHeight('360px')
-    
   }
   const hoverHandlerOut = () => {
     // setVisible('hidden'); 
