@@ -18,7 +18,7 @@ const ProjectParams = () => {
 
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
-        fetch(`${URL_API}/api/projects/${itemID}` && `${Local_API}/${itemID}`)
+        fetch(`${URL_API}/api/projects/${itemID}`)
         .then(res => res.json())
         .then(res => setItem(res.data))
         .catch(error => console.log(error))
