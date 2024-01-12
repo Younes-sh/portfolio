@@ -14,7 +14,7 @@ const Projects = () => {
     const Local_API = 'http://localhost:5000/api/projects/'
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
-      fetch(`${URL_API}/api/projects` && Local_API)
+      fetch(`${URL_API}/api/projects`)
           .then(res => res.json())
           .then(res => {
               setItems(res.data);
