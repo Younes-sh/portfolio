@@ -69,10 +69,17 @@ const ButtonChangeImage = styled.button`
   margin-top: 10px;
   border:none;
   padding: 10px;
-  background-color: transparent;
+  background-color: #EC8106;
+  border: solid 1px rgba(255, 255, 255, 0.6);
   text-align:left;
-  border: solid 1px #ccc;
   border-radius: 20px;
+  transition: 0.5s linear all;
+  color: #000;
+  
+  &:hover {
+    background-color: #3A3535;
+    color: #ccc;
+  }
 `
 const ContainerButtonsChangeImage = styled.div`
   display: flex;
@@ -80,9 +87,7 @@ const ContainerButtonsChangeImage = styled.div`
   justify-content: space-between;
   position: relative;
   z-index: 3;
-  :hover {
-    background-color: #666666;
-  }
+  
 `
 
 const ChangeItem = () => {
@@ -98,7 +103,30 @@ const [ changeDescription, setChangeDescription] = useState(Description1);
 const [ changeTitle, setChangeTitle] = useState(Title1)
 // Default image
 const [defaultImage, setDefaultImage] = useState('');
+// 
+const [ marginLeftAnimationButton, setMarginLeftAnimationButton ] = useState('-70px');
+const [ paddingAnimationButton, setPaddingAnimationButton ] = useState('82px');
+const [ backdropAnimationButton, setBackdropAnimationButton ] = useState('#232020');
+const [ textColorAnimationButton, setTextColorAnimationButton ] = useState('#ffffff');
 
+// State Button 2
+const [ marginLeftAnimationButton2, setMarginLeftAnimationButton2 ] = useState('');
+const [ paddingAnimationButton2, setPaddingAnimationButton2 ] = useState('');
+const [ backdropAnimationButton2, setBackdropAnimationButton2 ] = useState('');
+const [ textColorAnimationButton2, setTextColorAnimationButton2 ] = useState('');
+
+// State Button 3
+const [ marginLeftAnimationButton3, setMarginLeftAnimationButton3 ] = useState('');
+const [ paddingAnimationButton3, setPaddingAnimationButton3 ] = useState('');
+const [ backdropAnimationButton3, setBackdropAnimationButton3 ] = useState('');
+const [ textColorAnimationButton3, setTextColorAnimationButton3 ] = useState('');
+
+// State Button 3
+// Button 3
+const [ marginLeftAnimationButton4, setMarginLeftAnimationButton4 ] = useState('');
+const [ paddingAnimationButton4, setPaddingAnimationButton4 ] = useState('');
+const [ backdropAnimationButton4, setBackdropAnimationButton4 ] = useState('');
+const [ textColorAnimationButton4, setTextColorAnimationButton4 ] = useState('');
 
 
   const hoverHandlerIn =() => {
@@ -111,28 +139,109 @@ const [defaultImage, setDefaultImage] = useState('');
   }
   //   buttons cahnge images
 
+  // Button 1
   const OnechangeImage = () => {
     setChangeImage(ImageOne);
     setChangeDescription(Description1)
-    setChangeTitle(Title1)
+    setChangeTitle(Title1);
+    setMarginLeftAnimationButton('-70px');
+    setPaddingAnimationButton('82px');
+    setBackdropAnimationButton('#232020');
+    setTextColorAnimationButton('#ffffff');
+
+    // state button 2
+    setMarginLeftAnimationButton2('');
+    setPaddingAnimationButton2('');
+    setBackdropAnimationButton2('');
+    setTextColorAnimationButton2('');
+    // state button 3
+    setMarginLeftAnimationButton3('');
+    setPaddingAnimationButton3('');
+    setBackdropAnimationButton3('');
+    setTextColorAnimationButton3('');
+    // state button 4
+    setMarginLeftAnimationButton4('');
+    setPaddingAnimationButton4('');
+    setBackdropAnimationButton4('');
+    setTextColorAnimationButton4('');
   }
 
+  // button 2
   const TowchangeImage = () => {
     setChangeImage(ImageTow);
     setChangeDescription(Description2)
     setChangeTitle(Title2)
+    setMarginLeftAnimationButton2('-70px');
+    setPaddingAnimationButton2('82px');
+    setBackdropAnimationButton2('#232020');
+    setTextColorAnimationButton2('#ffffff');
+    // state button 1
+    setMarginLeftAnimationButton('');
+    setPaddingAnimationButton('');
+    setBackdropAnimationButton('');
+    setTextColorAnimationButton('');
+    // state button 3
+    setMarginLeftAnimationButton3('');
+    setPaddingAnimationButton3('');
+    setBackdropAnimationButton3('');
+    setTextColorAnimationButton3('');
+    // state button 4
+    setMarginLeftAnimationButton4('');
+    setPaddingAnimationButton4('');
+    setBackdropAnimationButton4('');
+    setTextColorAnimationButton4('');
   }
 
+  // Button 3
   const ThreechangeImage = () => {
     setChangeImage(ImageThree);
     setChangeDescription(Description3)
     setChangeTitle(Title3)
+    setMarginLeftAnimationButton3('-70px');
+    setPaddingAnimationButton3('82px');
+    setBackdropAnimationButton3('#232020');
+    setTextColorAnimationButton3('#ffffff');
+    // state button 1
+    setMarginLeftAnimationButton('');
+    setPaddingAnimationButton('');
+    setBackdropAnimationButton('');
+    setTextColorAnimationButton('');
+    // state button 2
+    setMarginLeftAnimationButton2('');
+    setPaddingAnimationButton2('');
+    setBackdropAnimationButton2('');
+    setTextColorAnimationButton2('');
+    // state button 4
+    setMarginLeftAnimationButton4('');
+    setPaddingAnimationButton4('');
+    setBackdropAnimationButton4('');
+    setTextColorAnimationButton4('');
   }
 
   const FourchangeImage = () => {
     setChangeImage(ImageFour);
     setChangeDescription(Description4)
     setChangeTitle(Title4)
+    setMarginLeftAnimationButton4('-70px');
+    setPaddingAnimationButton4('82px');
+    setBackdropAnimationButton4('#232020');
+    setTextColorAnimationButton4('#ffffff');
+    // state button 1
+    setMarginLeftAnimationButton('');
+    setPaddingAnimationButton('');
+    setBackdropAnimationButton('');
+    setTextColorAnimationButton('');
+    // state button 2
+    setMarginLeftAnimationButton2('');
+    setPaddingAnimationButton2('');
+    setBackdropAnimationButton2('');
+    setTextColorAnimationButton2('');
+    // state button 3
+    setMarginLeftAnimationButton3('');
+    setPaddingAnimationButton3('');
+    setBackdropAnimationButton3('');
+    setTextColorAnimationButton3('');
+    
   }
   // Change background-color the change images
 
@@ -157,24 +266,27 @@ const [defaultImage, setDefaultImage] = useState('');
               <ContainerButtonsChangeImage>
                 <ButtonChangeImage
                 onClick={OnechangeImage}
+                style={{ marginLeft:`${marginLeftAnimationButton}`, paddingLeft:`${paddingAnimationButton}`, backgroundColor:`${backdropAnimationButton}`, color:`${textColorAnimationButton}`}}
               >
-                <h3 style={{color:'#fff'}}>{Title1}</h3>
+                <h3>{Title1}</h3>
                 </ButtonChangeImage>
 
 
               {/*          2           */}
                 <ButtonChangeImage
                 onClick={() => TowchangeImage()}
+                style={{ marginLeft:`${marginLeftAnimationButton2}`, paddingLeft:`${paddingAnimationButton2}`, backgroundColor:`${backdropAnimationButton2}`, color:`${textColorAnimationButton2}`}}
               >
-                <h3 style={{color:'#fff'}}>{Title2}</h3>
+                <h3>{Title2}</h3>
                 </ButtonChangeImage>
 
 
                 {/*         3            */}
                 <ButtonChangeImage
                 onClick={ThreechangeImage}
+                style={{ marginLeft:`${marginLeftAnimationButton3}`, paddingLeft:`${paddingAnimationButton3}`, backgroundColor:`${backdropAnimationButton3}`, color:`${textColorAnimationButton3}`}}
               >
-                <h3 style={{color:'#fff'}}>{Title3}</h3>
+                <h3>{Title3}</h3>
                 </ButtonChangeImage>
 
 
@@ -182,8 +294,9 @@ const [defaultImage, setDefaultImage] = useState('');
                 
                 <ButtonChangeImage
                 onClick={FourchangeImage}
+                style={{ marginLeft:`${marginLeftAnimationButton4}`, paddingLeft:`${paddingAnimationButton4}`, backgroundColor:`${backdropAnimationButton4}`, color:`${textColorAnimationButton4}`}}
               >
-                <h3 style={{color:'#fff'}}>{Title4}</h3>
+                <h3>{Title4}</h3>
                 </ButtonChangeImage>
               </ContainerButtonsChangeImage>
             </Col>
