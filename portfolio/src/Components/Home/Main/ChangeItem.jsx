@@ -36,12 +36,17 @@ const Container = styled.div`
 const DivButton = styled.button`
   width: 300px;
   height: 600px;
-  // padding-top: 250px;
   border-radius: 200px;
   overflow: hidden;
   position: relative;
   background-size: cover;
   background-position: center;
+
+  @media screen and (max-width: 904px) {
+    width: 100%;
+    height: 270px;
+    border-radius: 70px;
+  }
 `
 const Paragraph = styled.p`
   height: auto;
@@ -63,6 +68,10 @@ const ContainerText = styled.div`
   -webkit-backdrop-filter: blur(5px);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 100% 0% 0% 25% / 56% 0% 25% 50%;
+  @media screen and (max-width: 904px) {
+    height: auto;
+    border-radius: 20px;
+  }
 `
 // ButtonChangeImage
 const ButtonChangeImage = styled.button`
