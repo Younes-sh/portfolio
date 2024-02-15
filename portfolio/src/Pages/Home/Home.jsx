@@ -24,11 +24,12 @@ const Home = () => {
      
       <br />
 
-      <Row className=' py-5 '>
+      <Row className=' pt-5 '>
           <MainOne />
       </Row>
 
       <Row>
+          {/* SEO section */}
           <MainTwo />
       </Row>
 

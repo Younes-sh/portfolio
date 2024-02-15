@@ -11,7 +11,6 @@ const Projects = () => {
       window.scrollTo(0, 0); // اسکرول به بالای صفحه
     },[])
     
-    const Local_API = 'http://localhost:5000/api/projects/'
     const URL_API = process.env.REACT_APP_URL_API;
     useEffect(() => {
       fetch(`${URL_API}/api/projects`)

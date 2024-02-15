@@ -83,7 +83,7 @@ const leaveHandler = () => {
 
   return (
     <div style={{ position: 'relative' }}  >
-      <IMG  src={props.situation} alt="" />
+      {/* <IMG  src={props.situation} alt="" /> */}
       <Button
         className='mt-5 pt-5'
         style={{ border: 'none', background: 'none' }}
