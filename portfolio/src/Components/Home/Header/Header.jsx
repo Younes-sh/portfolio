@@ -5,9 +5,6 @@ import './style.css';
 
 
 import Younes from '../../../assets/Home/younes.png';
-import Crystal from '../../../assets/Home/png.png';
-import goldYounes from '../../../assets/Home/goldYounes.png';
-import ManGranit from '../../../assets/Home/ManGranit.png';
 import bootstrap from '../../../assets/Header/bootstrap.png';
 import docker from '../../../assets/Header/docker.png';
 import git from '../../../assets/Header/git.png';
@@ -50,7 +47,7 @@ import { Rotate } from 'react-reveal';
 
 
 const IMG = styled.img`
-    width: 70%;
+    width: 85%;
     clip-path: polygon(49% 0, 100% 0, 100% 35%, 95% 66%, 90% 84%, 66% 100%, 37% 100%, 12% 90%, 0 48%, 0 0);
     @media screen and (max-width: 980px) {
         margin-top:50px;
@@ -128,7 +125,7 @@ const Header = () => {
        
             
             <div className=''>
-            <IMG  src={goldYounes} alt="programer" style={{zIndex:2}}/>
+            <IMG  src={Younes} alt="programer" style={{zIndex:2}}/>
                 <button
                     onMouseEnter={changeImage}
                     onMouseLeave={reChange}
