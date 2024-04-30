@@ -8,6 +8,7 @@ const P = styled.p`
   text-align: justify;
 `
 
+
 const About = () => {
 
   useEffect(() => {

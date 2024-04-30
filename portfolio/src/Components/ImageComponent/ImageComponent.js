@@ -26,11 +26,11 @@ const ImageComponent = ({Title,Image,Alt}) => {
 
   const Container = styled.div`
     width:100%;
-    height:auto;
   `
   const ShowImage = styled.div`
     width:80%;
     margin-top:-400px;
+    min-height: 100vh;
     padding:30px;
     position:absolute;
     z-index:2;
@@ -66,7 +66,7 @@ const ImageComponent = ({Title,Image,Alt}) => {
               <button className='m-2 btn btn-success' onClick={downloadImage} >PNG</button>
               <PdfComponent />
             </div>
-              <img style={{width:'90%',margin:'auto'}} src={Image}  alt={Alt}/>
+              <img style={{width:'100%',margin:'auto'}} src={Image}  alt={Alt}/>
           </ShowImage>
         )
       }

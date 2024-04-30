@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from '../../assets/LogoPortfolio.png';
+// import Logo from '../../assets/LogoPortfolio.png';
 import styled from 'styled-components';
 import './style.css'
 
@@ -46,10 +46,10 @@ const Menu = () => {
           />
                 <Navbar.Collapse id="basic-navbar-nav" className='w-100  ContentMenu' >
                   <Nav className="me-auto " onClick={() => setExpanded(expanded ? false : 'expanded')}>
-                    <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/' ><span className='fancy'>Home</span></NavLink>
-                    <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/projects' ><span className='fancy'>Projects</span></NavLink>
-                    <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/about' ><span className='fancy'>About</span></NavLink>
-                    <NavLink className='px-1 ' style={{textDecoration:'none'}} to='/contact' ><span className='fancy'>Contact</span></NavLink>
+                    <NavLink className='px-1 ' style={{textDecoration:'none', textAlign:'start'}} to='/' ><span className='fancy'>Home</span></NavLink>
+                    <NavLink className='px-1 ' style={{textDecoration:'none', textAlign:'start'}} to='/projects' ><span className='fancy'>Projects</span></NavLink>
+                    <NavLink className='px-1 ' style={{textDecoration:'none', textAlign:'start'}} to='/about' ><span className='fancy'>About</span></NavLink>
+                    <NavLink className='px-1 ' style={{textDecoration:'none', textAlign:'start'}} to='/contact' ><span className='fancy'>Contact</span></NavLink>
                   </Nav>
             </Navbar.Collapse>
           </Container>
