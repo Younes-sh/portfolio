@@ -9,11 +9,11 @@ function DarkMode() {
 
   const DarkModeHandler = () => {
     if(isTrue == true) {
-      console.log('خاموش');
+      console.log('Bright');
       setIsTrue(false)
     }
     else if(isTrue == false) {
-      console.log('روشن');
+      console.log('Off');
       setIsTrue(true)
     }
   }
